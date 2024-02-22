@@ -13,7 +13,7 @@ const Signup = () => {
     const account = { username, password, age, gender };
 
     const response = await fetch(
-      "https://flexsync.onrender.com/api/account/signup",
+      "https://flexsync-api.onrender.com/api/account/signup",
       {
         method: "POST",
         body: JSON.stringify(account),
