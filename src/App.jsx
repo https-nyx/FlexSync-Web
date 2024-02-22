@@ -11,7 +11,7 @@ function App() {
         className="text-center display-4 display-md-3 display-lg-2"
         style={{ fontStyle: "bold" }}
       >
-        <strong>NIGGER</strong>
+        <strong>NICE GUY</strong>
       </h1>
     </div>
   );
