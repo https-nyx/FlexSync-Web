@@ -1,20 +1,11 @@
-// Import Bootstrap Styles
-import "bootstrap/dist/css/bootstrap.min.css";
+// Import Components
+import Signup from "./Components/Signup";
 
 function App() {
   return (
-    <div
-      className="d-flex justify-content-center align-items-center"
-      style={{ height: "100vh" }}
-    >
-      <h1
-        className="text-center display-4 display-md-3 display-lg-2"
-        style={{ fontStyle: "bold" }}
-      >
-        <strong>NICE GUY</strong>
-        <p> by: davine</p>
-      </h1>
-    </div>
+    <>
+      <Signup />
+    </>
   );
 }
 
