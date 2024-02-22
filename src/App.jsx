@@ -12,6 +12,7 @@ function App() {
         style={{ fontStyle: "bold" }}
       >
         <strong>NICE GUY</strong>
+        <p> by: Nikolai</p>
       </h1>
     </div>
   );
