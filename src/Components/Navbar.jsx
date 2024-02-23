@@ -1,3 +1,4 @@
+import logo from "../assets/flexsync-logo.png";
 import NavbarStyle from "../Styles/navbar.module.css";
 import { Link } from "react-router-dom";
 
@@ -5,7 +6,14 @@ const Navbar = () => {
   return (
     <>
       <header className={NavbarStyle["navbar"]}>
-        <h1 className={NavbarStyle["navbar-title"]}>FlexSync</h1>
+        <div className={NavbarStyle["navbar-logo-container"]}>
+          <img
+            src={logo}
+            alt="FlexSync Logo"
+            className={NavbarStyle["navbar-logo"]}
+          />
+          <h1 className={NavbarStyle["navbar-title"]}>FlexSync</h1>
+        </div>
         <nav className={NavbarStyle["navbar-list-container"]}>
           <ul className={NavbarStyle["navbar-list"]}>
             <Link to="/">

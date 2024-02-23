@@ -7,10 +7,20 @@
   color: #ffffff;
 }
 
+.navbar-logo-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-logo {
+  height: 4rem;
+  width: 4rem;
+}
+
 .navbar-title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-left: 5vw;
+  margin-right: 5rem;
 }
 
 .navbar-list-container {
