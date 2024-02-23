@@ -1,3 +1,5 @@
+import LoginStyle from "../Styles/login.module.css";
+
 const Login = () => {
   return (
     <>

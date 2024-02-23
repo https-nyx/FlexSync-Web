@@ -1,3 +1,5 @@
+import ProfileStyle from "../Styles/profile.module.css";
+
 const Profile = () => {
   return (
     <>
