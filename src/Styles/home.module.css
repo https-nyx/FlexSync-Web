@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .herobanner {
+    margin-top: 215px;
+    margin-left: 50px;
+    position: relative;
+    padding: 20px;
+}
+ 
+  .bannertitle {
+    color: #ea152c;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.bannersubtitle {
+  font-weight: 700;
+  font-size: 46px;
+  margin-bottom: 23px;
+  margin-top: 30px;
+}
+
+.bannertext {
+  font-size: 22px;
+  line-height: 35px;
+  margin-bottom: 3px;
+}
+
+.bannerbutton {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 10px;
+  
+}
+.bannerbutton:hover{
+  background-color: lightcoral;
+}
+
+.bannerfitness {
+  font-weight: 600;
+  color: #ea152c;
+  font-size: 190px;
+  opacity: 0.1;
+  display: block;
+  margin-bottom: 23px;
+  margin-top: 60px;
+}
+
+.gympic {
+  width: 35%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(151, 92, 63, 0.1); /* Add a subtle shadow */
+  position: absolute;
+  top: -200px; /* Adjust the top position */
+  left: 850px; /* Adjust the left position */
+}
+
+  

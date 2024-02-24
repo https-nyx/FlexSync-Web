@@ -27,7 +27,9 @@
   display: flex;
   align-items: center;
   margin-right: 3vw;
+
 }
+
 
 .navbar-list-container a {
   color: #ffffff;
@@ -46,8 +48,8 @@
   margin-left: 1rem;
 }
 
-.navbar-items a:hover {
-  color: #ff0000;
+.navbar-items:hover {
+  color: #efa99b;
 }
 
 @media (max-width: 540px) {

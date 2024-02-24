@@ -28,6 +28,10 @@ const Navbar = () => {
             <Link to="/signup">
               <li className={NavbarStyle["navbar-items"]}>Sign Up</li>
             </Link>
+
+            <Link to="/login">
+              <li className={NavbarStyle["navbar-items"]}>Log in</li>
+            </Link>
           </ul>
         </nav>
       </header>
