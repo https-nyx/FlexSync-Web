@@ -12,7 +12,7 @@ const Navbar = () => {
             alt="FlexSync Logo"
             className={NavbarStyle["navbar-logo"]}
           />
-          <h1 className={NavbarStyle["navbar-title"]}>sexsync</h1>
+          <h1 className={NavbarStyle["navbar-title"]}>Flexsync</h1>
         </div>
         <nav className={NavbarStyle["navbar-list-container"]}>
           <ul className={NavbarStyle["navbar-list"]}>
