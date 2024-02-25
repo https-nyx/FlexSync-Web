@@ -1,0 +1,33 @@
+.profileContainer {
+    /* Add styles for the container if needed */
+    text-align: center;
+  }
+  
+  
+  .username {
+    /* Add styles for the username if needed */
+    text-align: center;
+
+  }
+
+  .age {
+    /* Add styles for the age if needed */
+    text-align: center;
+
+  }
+  
+  .gender {
+    /* Add styles for the gender if needed */
+    text-align: center;
+
+  }
+  
+  .isDisabled {
+    /* Add styles for the isDisabled if needed */
+    text-align: center;
+}
+
+  .mostClicked{
+
+    text-align: center;
+}
