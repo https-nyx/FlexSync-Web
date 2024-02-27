@@ -5,6 +5,7 @@ import Login from "./Components/Login";
 import Profile from "./Components/Profile";
 import Signup from "./Components/Signup";
 import Workout from "./Components/Workout";
+import WorkoutForm from "./Components/WorkoutForm";
 
 // Import Component
 import Navbar from "./Components/Navbar";
@@ -33,9 +34,13 @@ function App() {
         </Route>
         <Route exact path="/workout">
           <Workout />
-        
         </Route>
+        <Route exact path="/workoutform">
+          <WorkoutForm />
+        </Route>
+
       </Switch>
+
     </Router>
   );
 }
