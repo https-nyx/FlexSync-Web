@@ -39,7 +39,6 @@ function App() {
         <Route exact path="/workoutform">
           <WorkoutForm />
         </Route>
-
         <Route exact path="/workout/Legs">
           <Legs />
         </Route>
