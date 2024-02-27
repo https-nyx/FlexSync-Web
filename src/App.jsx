@@ -6,6 +6,7 @@ import Profile from "./Components/Profile";
 import Signup from "./Components/Signup";
 import Workout from "./Components/Workout";
 import WorkoutForm from "./Components/WorkoutForm";
+import Legs from "./Components/Workout-Components/Legs";
 
 // Import Component
 import Navbar from "./Components/Navbar";
@@ -39,6 +40,9 @@ function App() {
           <WorkoutForm />
         </Route>
 
+        <Route exact path="/workout/Legs">
+          <Legs />
+        </Route>
       </Switch>
 
     </Router>

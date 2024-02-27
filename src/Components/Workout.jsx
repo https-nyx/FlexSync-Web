@@ -5,48 +5,42 @@ const Workout = () => {
   return (
     <>
       <div className={WorkoutStyle["workoutContainer"]}>
-      
         <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/:id">
-          <h2>Workout 1</h2>
-          <p>Workout 1 Description</p>
-        </Link>
+          <Link to="/workout/:Chest">
+            <h2>Chest</h2>
+            <p>Workout 1 Description</p>
+          </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/:id">
-          <h2>Workout 2</h2>
-          <p>Workout 2 Description</p>
-        </Link>
+          <Link to="/workout/:Arms">
+            <h2>Arms</h2>
+            <p>Workout 2 Description</p>
+          </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/:id">
-          <h2>Workout 3</h2>
-          <p>Workout 3 Description</p>
-        </Link>
+          <Link to="/workout/:Back">
+            <h2>Back</h2>
+            <p>Workout 3 Description</p>
+          </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/:id">
-          <h2>Workout 4</h2>
-          <p>Workout 4 Description</p>
-        </Link>
+          <Link to="/workout/:Legs">
+            <h2>Legs</h2>
+            <p>Workout 4 Description</p>
+          </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/:id">
-          <h2>Workout 5</h2>
-          <p>Workout 5 Description</p>
-        </Link>
+          <Link to="/workout/:Abs">
+            <h2>Abs</h2>
+            <p>Workout 5 Description</p>
+          </Link>
         </div>
+
         <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/:id">
-          <h2>Workout 6</h2>
-          <p>Workout 6 Description</p>
-        </Link>
-        </div>
-        <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/:id">
-          <h2>Most clicked</h2>
-          <p>Most clicked description</p>
-        </Link>
+          <Link to="/workout/:id">
+            <h2>Most clicked</h2>
+            <p>Most clicked description</p>
+          </Link>
         </div>
       </div>
     </>
