@@ -7,7 +7,7 @@ const Profile = () => {
   return (
     <div className={ProfileStyle.profileContainer}>
       
-      <h1 className={ProfileStyle.username}>Username</h1>
+      <h1 className={ProfileStyle.username}>Name</h1>
 
       <p className={ProfileStyle.age}>
         Age:

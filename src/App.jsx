@@ -33,6 +33,7 @@ function App() {
         </Route>
         <Route exact path="/workout">
           <Workout />
+        
         </Route>
       </Switch>
     </Router>
