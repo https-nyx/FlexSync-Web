@@ -1,7 +1,9 @@
 .form {
   display: flex;
   flex-direction: column;
-  margin: 10vw;
+  margin-top: 10vh;
+  margin-left: 12vw;
+  margin-right: 12vw;
 }
 
 .form-title {
@@ -14,18 +16,19 @@
 }
 
 .form-label {
-  margin-bottom: 1vw;
+  margin-bottom: 1vh;
   font-size: 0.8rem;
   font-weight: 500;
 }
 
 .form-input,
 .form-dropdown {
+  text-indent: 1rem;
   margin-bottom: 4vw;
   background-color: rgb(67, 68, 67);
   color: white;
-  border: none;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
+  border: solid 1px #cf4d48;
   height: 5vh;
 }
 
@@ -39,7 +42,7 @@
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   border: none;
-  border-radius: 0.8rem;
+  border-radius: 2rem;
   background-color: #c23732;
   color: white;
 }
@@ -49,5 +52,111 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+.has-account {
+  text-align: center;
+  margin-top: 2.5vh;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding-bottom: 20vh;
+}
+
+.login-link {
+  color: rgb(219, 86, 86);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 614px) {
+  .form-title {
+    font-size: 2.25em;
+    margin-top: -1vh;
+    margin-bottom: 6vh;
+  }
+
+  .form-label {
+    margin-bottom: -2.5vh;
+    font-size: 0.9em;
+  }
+
+  .form-input,
+  .form-dropdown {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 1vh;
+    height: 10vh;
+  }
+
+  .submit-btn {
+    margin-top: 2vh;
+    border-radius: 1.5rem;
+    height: 10vh;
+  }
+}
+
+@media screen and (min-width: 615px) and (max-width: 900px) {
+  .form {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+  .form-title {
+    font-size: 3em;
+    margin-top: -1vh;
+    margin-bottom: 9vh;
+  }
+
+  .form-label {
+    margin-bottom: -2.5vh;
+    font-size: 0.9em;
+  }
+
+  .form-input,
+  .form-dropdown {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 2vh;
+    height: 11vh;
+  }
+
+  .submit-btn {
+    margin-top: 2vh;
+    height: 10vh;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .form {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .form-title {
+    font-size: 3.2em;
+    margin-top: -1vh;
+    margin-bottom: 9vh;
+  }
+
+  .form-label {
+    margin-bottom: -2.5vh;
+    font-size: 0.9em;
+  }
+
+  .form-input,
+  .form-dropdown {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 3vh;
+    height: 11vh;
+  }
+
+  .submit-btn {
+    margin-top: 2vh;
+    height: 10vh;
+  }
+
+  .has-account {
+    margin-top: 2.5vh;
+    font-size: 1rem;
+  }
 }

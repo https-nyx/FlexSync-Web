@@ -20,6 +20,7 @@
 .navbar-title {
   font-size: 1.5rem;
   font-weight: bold;
+  margin-left: 1vw;
   margin-right: 5rem;
 }
 
@@ -27,9 +28,7 @@
   display: flex;
   align-items: center;
   margin-right: 3vw;
-
 }
-
 
 .navbar-list-container a {
   color: #ffffff;
@@ -52,8 +51,11 @@
   color: #efa99b;
 }
 
-@media (max-width: 540px) {
+@media screen and (max-width: 614px) {
   .navbar-list-container {
     display: none;
   }
+}
+
+@media (min-width: 615px) {
 }

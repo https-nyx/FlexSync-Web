@@ -12,7 +12,7 @@ const Navbar = () => {
             alt="FlexSync Logo"
             className={NavbarStyle["navbar-logo"]}
           />
-          <h1 className={NavbarStyle["navbar-title"]}>Flexsync</h1>
+          <h1 className={NavbarStyle["navbar-title"]}>FlexSync</h1>
         </div>
         <nav className={NavbarStyle["navbar-list-container"]}>
           <ul className={NavbarStyle["navbar-list"]}>
@@ -27,10 +27,6 @@ const Navbar = () => {
             </Link>
             <Link to="/signup">
               <li className={NavbarStyle["navbar-items"]}>Sign Up</li>
-            </Link>
-
-            <Link to="/login">
-              <li className={NavbarStyle["navbar-items"]}>Log in</li>
             </Link>
           </ul>
         </nav>
