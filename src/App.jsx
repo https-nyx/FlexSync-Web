@@ -5,6 +5,9 @@ import Login from "./Components/Login";
 import Profile from "./Components/Profile";
 import Signup from "./Components/Signup";
 import Workout from "./Components/Workout";
+
+// Import Components
+import Navbar from "./Components/Navbar";
 import WorkoutForm from "./Components/WorkoutForm";
 import Legs from "./Components/Workout-Components/Legs";
 import MealPlan from "./Components/Mealplan";
@@ -22,11 +25,7 @@ import OverheadPress from "./Components/Arms-Workout-Components/OverheadPres";
 import Pushup from "./Components/Arms-Workout-Components/Pushup";
 
 
-// Import Component
-import Navbar from "./Components/Navbar";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 
 function App() {
   return (
@@ -98,7 +97,6 @@ function App() {
         </Route>
        
       </Switch>
-
     </Router>
   );
 }
