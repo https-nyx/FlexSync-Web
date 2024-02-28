@@ -7,11 +7,13 @@ import Signup from "./Components/Signup";
 import Workout from "./Components/Workout";
 import WorkoutForm from "./Components/WorkoutForm";
 import Legs from "./Components/Workout-Components/Legs";
+import MealPlan from "./Components/Mealplan";
 
 // Import Component
 import Navbar from "./Components/Navbar";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -41,6 +43,9 @@ function App() {
         </Route>
         <Route exact path="/workout/Legs">
           <Legs />
+        </Route>
+        <Route exact path="/mealplan">
+          <MealPlan />
         </Route>
       </Switch>
 

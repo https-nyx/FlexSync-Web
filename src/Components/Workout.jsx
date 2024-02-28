@@ -24,7 +24,7 @@ const Workout = () => {
           </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
-          <Link to="/workout/:Legs">
+          <Link to="/workout/legs">
             <h2>Legs</h2>
             <p>Workout 4 Description</p>
           </Link>

@@ -1,5 +1,6 @@
 import LegStyle from "../../Styles/legs.module.css";
 import WorkoutStyle from "../../Styles/workout.module.css";
+import { Link } from "react-router-dom";
 const Legs = () => {
   return (
     <div className={WorkoutStyle["workoutContainer"]}>
