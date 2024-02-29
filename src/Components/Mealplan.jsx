@@ -1,4 +1,4 @@
-import DietStyle from "../Styles/dietform.module.css";
+import DietStyle from "../Styles/signup.module.css";
 import { useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
@@ -46,10 +46,6 @@ const Mealplan = () => {
       <>
         <form className={DietStyle.form}>
             <p className={DietStyle["form-title"]}>Create mealplan</p>
-
-            <label htmlFor="title" className={DietStyle["form-label"]}>
-                Title
-            </label>
             <br />
             <input
             type = "text"
@@ -59,10 +55,6 @@ const Mealplan = () => {
             value = {title}
             />
             <br />
-            <label htmlFor="breakfast" className={DietStyle["form-label"]}>
-                Breakfast
-            </label>
-            <br />
             <input 
             type="text"
             className={DietStyle["form-input"]}
@@ -71,10 +63,6 @@ const Mealplan = () => {
             value = {breakfast}
             />
             <br />
-            <label htmlFor="lunch" className={DietStyle["form-label"]}>
-                Lunch
-            </label>
-            <br />
             <input 
             type ="text"
             className={DietStyle["form-input"]}
@@ -82,10 +70,6 @@ const Mealplan = () => {
             onChange={(e) => setLunch(e.target.value)}
             value={lunch}
             />
-            <br />
-            <label htmlFor="dinner" className={DietStyle["form-label"]}>
-                Dinner
-            </label>
             <br />
             <input
             type="text"

@@ -1,4 +1,4 @@
-import WorkoutStyle from "../Styles/workoutform.module.css";
+import SignupStyle from "../Styles/signup.module.css";
 import { useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
@@ -40,44 +40,38 @@ const WorkoutForm = () => {
 
     return (
       <>
-        <form className={WorkoutStyle.form}>
-            <p className={WorkoutStyle["form-title"]}>Create workout</p>
-            <label htmlFor="title" className={WorkoutStyle["form-label"]}>
-                Title
-            </label>
+        <form className={SignupStyle.form}>
+            <p className={SignupStyle["form-title"]}>Create workout</p>
+            <br />
             <br />
             <input
             type="text"
-            className={WorkoutStyle["form-input"]}
+            className={SignupStyle["form-input"]}
             placeholder="Enter title"
             onChange={(e) => setTitle(e.target.value)}
             value={title}
             />
             <br />
-            <label htmlFor="time" className={WorkoutStyle["form-label"]}>
-                Time
-            </label>
             <br />
             <input 
             type="text"
-            className={WorkoutStyle["form-input"]}
+            className={SignupStyle["form-input"]}
             placeholder="Enter time"
             onChange={(e) => setTime(e.target.value)}
             value={time}
             />
-            <label htmlFor="reps" className={WorkoutStyle["form-label"]}>
-                Reps
-            </label>
+            <br />
             <br />
             <input 
             type="text"
-            className={WorkoutStyle["form-input"]}
+            className={SignupStyle["form-input"]}
             placeholder="Enter reps"
             onChange={(e) => setReps(e.target.value)}
             value={reps}
             />
             <br />
-            <button className={WorkoutStyle["submit-btn"]} onClick={handleForm}>
+            <br />
+            <button className={SignupStyle["submit-btn"]} onClick={handleForm}>
                 Send Workout
             </button>
         </form>
