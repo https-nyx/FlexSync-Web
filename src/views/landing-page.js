@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import SolidButton from '../components/solid-button'
-import './landing-page.css'
+import SolidButton from "../components/solid-button";
+import "./landing-page.css";
 
 const LandingPage = (props) => {
   return (
     <div className="landing-page-container">
       <Helmet>
-        <title>Travel Agency</title>
+        <title>FlexSync</title>
         <meta property="og:title" content="Travel Agency" />
       </Helmet>
       <div className="landing-page-top-container">
@@ -69,7 +69,7 @@ const LandingPage = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -129,7 +129,7 @@ const LandingPage = (props) => {
                 Fitness is not a destination, it&apos;s a way of life.&quot;
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -155,7 +155,7 @@ const LandingPage = (props) => {
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -204,7 +204,7 @@ const LandingPage = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;

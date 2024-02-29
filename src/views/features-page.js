@@ -1,17 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import SolidButton from '../components/solid-button'
-import FeatureCard21 from '../components/feature-card21'
-import './features-page.css'
+import SolidButton from "../components/solid-button";
+import FeatureCard21 from "../components/feature-card21";
+import "./features-page.css";
 
 const FeaturesPage = (props) => {
   return (
     <div className="features-page-container">
       <Helmet>
-        <title>Features-Page - Travel Agency</title>
+        <title>Features</title>
         <meta property="og:title" content="Features-Page - Travel Agency" />
       </Helmet>
       <div className="features-page-top-container">
@@ -72,7 +72,7 @@ const FeaturesPage = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -159,7 +159,7 @@ const FeaturesPage = (props) => {
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -208,7 +208,7 @@ const FeaturesPage = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FeaturesPage
+export default FeaturesPage;

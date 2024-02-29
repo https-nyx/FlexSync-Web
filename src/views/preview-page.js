@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import SolidButton from '../components/solid-button'
-import './preview-page.css'
+import SolidButton from "../components/solid-button";
+import "./preview-page.css";
 
 const PreviewPage = (props) => {
   return (
     <div className="preview-page-container">
       <Helmet>
-        <title>Preview-Page - Travel Agency</title>
+        <title>Preview</title>
         <meta property="og:title" content="Preview-Page - Travel Agency" />
       </Helmet>
       <div className="preview-page-top-container">
@@ -69,7 +69,7 @@ const PreviewPage = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -225,7 +225,7 @@ const PreviewPage = (props) => {
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -274,7 +274,7 @@ const PreviewPage = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PreviewPage
+export default PreviewPage;
