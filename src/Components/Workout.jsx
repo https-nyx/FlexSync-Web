@@ -6,19 +6,19 @@ const Workout = () => {
     <>
       <div className={WorkoutStyle["workoutContainer"]}>
         <div className={WorkoutStyle["workoutCard"]}>
-          <Link to="/workout/chest">
+          <Link to="/workout/:Chest">
             <h2>Chest</h2>
             <p>Workout 1 Description</p>
           </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
-          <Link to="/workout/arms">
+          <Link to="/workout/:Arms">
             <h2>Arms</h2>
             <p>Workout 2 Description</p>
           </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
-          <Link to="/workout/back">
+          <Link to="/workout/:Back">
             <h2>Back</h2>
             <p>Workout 3 Description</p>
           </Link>
@@ -30,27 +30,16 @@ const Workout = () => {
           </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
-          <Link to="/workout/abs">
+          <Link to="/workout/:Abs">
             <h2>Abs</h2>
             <p>Workout 5 Description</p>
           </Link>
         </div>
+
         <div className={WorkoutStyle["workoutCard"]}>
-          <Link to="/workout/mostclicked">
+          <Link to="/workout/:id">
             <h2>Most clicked</h2>
             <p>Most clicked description</p>
-          </Link>
-        </div>
-        <div className={WorkoutStyle["workoutCard"]}>
-          <Link to="/yourworkouts">
-            <h2>Your workouts!</h2>
-            <p>Acess your workouts here!</p>
-          </Link>
-        </div>
-        <div className={WorkoutStyle["workoutCard"]}>
-          <Link to="/workoutform">
-            <h2>Create your own workout!</h2>
-            <p>Create your own workout here!</p>
           </Link>
         </div>
       </div>
