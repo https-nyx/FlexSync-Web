@@ -42,6 +42,12 @@ const Workout = () => {
             <p>Most clicked description</p>
           </Link>
         </div>
+        <div className={WorkoutStyle["workoutCard"]}>
+          <Link to="/yourworkouts">
+            <h2>YOUR WORKOUTS</h2>
+            <p>Acess your workouts here!</p>
+          </Link>
+        </div>
       </div>
     </>
   );

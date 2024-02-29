@@ -8,12 +8,15 @@ import Workout from "./Components/Workout";
 import WorkoutForm from "./Components/WorkoutForm";
 import Legs from "./Components/Workout-Components/Legs";
 import MealPlan from "./Components/Mealplan";
+import Vegetarian from "./Components/Diet-Components/Vegetarian";
+import Pescetarian from "./Components/Diet-Components/Pescetaian";
+import Mediterranean from "./Components/Diet-Components/mediterranean";
+import HighProteinDiet from "./Components/Diet-Components/HighProteinDiet";
 
 // Import Component
 import Navbar from "./Components/Navbar";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 
 function App() {
   return (
@@ -47,8 +50,19 @@ function App() {
         <Route exact path="/mealplan">
           <MealPlan />
         </Route>
+        <Route exact path="/diet/vegetarian">
+          <Vegetarian />
+        </Route>
+        <Route exact path="/diet/pescetarian">
+          <Pescetarian />
+        </Route>
+        <Route exact path="/diet/mediterranean">
+          <Mediterranean />
+        </Route>
+        <Route exact path="/diet/HighProteinDiet">
+          <HighProteinDiet />
+        </Route>
       </Switch>
-
     </Router>
   );
 }
