@@ -1,11 +1,16 @@
 import CalfRaiseStyle from "../../Styles/workout.module.css";
+import CalfRaisePic from "../../assets/images/calfraise.png";
 
 const CalfRaise = () => {
   return (
     <>
        <div className={CalfRaiseStyle["excercisesContainer"]}>
       <div className={CalfRaiseStyle["excerciseCard"]}>
-        <h2>IMAGE</h2>
+
+      <div className={CalfRaiseStyle["imageStyle"]}>
+      <img src={CalfRaisePic} alt="exercisepic" class="exercise-pic"> 
+      </img>
+        </div>
 
         <p className={CalfRaiseStyle["excerciseTemplateTitle"]}>Calf Raise</p>
 

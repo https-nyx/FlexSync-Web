@@ -1,11 +1,16 @@
 import SupermanStyle from "../../Styles/workout.module.css";
+import SupermanPic from "../../assets/images/superman.png";
 
 const Superman = () => {
   return (
     <>
       <div className={SupermanStyle["excercisesContainer"]}>
       <div className={SupermanStyle["excerciseCard"]}>
-        <h2>IMAGE</h2>
+
+      <div className={SupermanStyle["imageStyle"]}>
+      <img src={SupermanPic} alt="exercisepic" class="exercise-pic"> 
+      </img>
+        </div>
 
         <p className={SupermanStyle["excerciseTemplateTitle"]}>The Superman</p>
 

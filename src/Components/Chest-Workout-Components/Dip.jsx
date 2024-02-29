@@ -1,11 +1,16 @@
 import DipStyle from "../../Styles/workout.module.css";
+import DipStylePic from "../../assets/images/Dips.png"
 
 const Dip = () => {
   return (
     <>
        <div className={DipStyle["excercisesContainer"]}>
       <div className={DipStyle["excerciseCard"]}>
-        <h2>IMAGE</h2>
+
+      <div className={DipStyle["imageStyle"]}>
+      <img src={DipStylePic} alt="exercisepic" class="exercise-pic"> 
+      </img>
+        </div>
 
         <p className={DipStyle["excerciseTemplateTitle"]}>The Dip</p>
 

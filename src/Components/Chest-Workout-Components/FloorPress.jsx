@@ -1,11 +1,16 @@
 import FloorPressStyle from "../../Styles/workout.module.css";
+import FloorPressPic from "../../assets/images/floorpress.jpg";
 
 const FloorPress = () => {
   return (
     <>
        <div className={FloorPressStyle["excercisesContainer"]}>
       <div className={FloorPressStyle["excerciseCard"]}>
-        <h2>IMAGE</h2>
+
+      <div className={FloorPressStyle["imageStyle"]}>
+      <img src={FloorPressPic} alt="exercisepic" class="exercise-pic"> 
+      </img>
+        </div>
 
         <p className={FloorPressStyle["excerciseTemplateTitle"]}>FloorPress</p>
 

@@ -1,11 +1,16 @@
 import LungesStyle from "../../Styles/workout.module.css";
+import LungesPic from "../../assets/images/lunge.png";
 
 const Lunges = () => {
   return (
     <>
  <div className={LungesStyle["excercisesContainer"]}>
       <div className={LungesStyle["excerciseCard"]}>
-        <h2>IMAGE</h2>
+
+      <div className={LungesStyle["imageStyle"]}>
+      <img src={LungesPic} alt="exercisepic" class="exercise-pic"> 
+      </img>
+        </div>
 
         <p className={LungesStyle["excerciseTemplateTitle"]}>Lunges</p>
 

@@ -1,11 +1,16 @@
 import DumbBellStyle from "../../Styles/workout.module.css";
+import DumbellStylePic from "../../assets/images/dumbellbenchpress.png";
 
 const DumbBellPress = () => {
   return (
     <>
        <div className={DumbBellStyle["excercisesContainer"]}>
       <div className={DumbBellStyle["excerciseCard"]}>
-        <h2>IMAGE</h2>
+
+      <div className={DumbBellStyle["imageStyle"]}>
+      <img src={DumbellStylePic} alt="exercisepic" class="exercise-pic"> 
+      </img>
+        </div>
 
         <p className={DumbBellStyle["excerciseTemplateTitle"]}>Dumbell Bench Press</p>
 

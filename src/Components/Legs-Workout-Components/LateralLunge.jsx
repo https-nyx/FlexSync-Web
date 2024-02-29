@@ -1,11 +1,16 @@
 import LateralLungsStyle from "../../Styles/workout.module.css";
+import LateralLungePic from "../../assets/images/laterallungs.png";
 
 const LateralLunge = () => {
   return (
     <>
  <div className={LateralLungsStyle["excercisesContainer"]}>
       <div className={LateralLungsStyle["excerciseCard"]}>
-        <h2>IMAGE</h2>
+
+      <div className={LateralLungsStyle["imageStyle"]}>
+      <img src={LateralLungePic} alt="exercisepic" class="exercise-pic"> 
+      </img>
+        </div>
 
         <p className={LateralLungsStyle["excerciseTemplateTitle"]}>Lateral Lunge</p>
 

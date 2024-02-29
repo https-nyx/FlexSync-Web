@@ -1,11 +1,16 @@
 import LegCurlStyle from "../../Styles/workout.module.css";
+import LegCurlPic from "../../assets/images/legcurl.png";
 
 const LegCurl = () => {
   return (
     <>
  <div className={LegCurlStyle["excercisesContainer"]}>
       <div className={LegCurlStyle["excerciseCard"]}>
-        <h2>IMAGE</h2>
+
+      <div className={LegCurlStyle["imageStyle"]}>
+      <img src={LegCurlPic} alt="exercisepic" class="exercise-pic"> 
+      </img>
+        </div>
 
         <p className={LegCurlStyle["excerciseTemplateTitle"]}>Leg Curl</p>
 

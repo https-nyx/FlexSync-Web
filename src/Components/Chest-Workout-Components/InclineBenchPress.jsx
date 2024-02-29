@@ -1,11 +1,16 @@
 import InclineBenchPressStyle from "../../Styles/workout.module.css";
+import InclineBenchPressPic from "../../assets/images/incline-bench-press.jpg";
 
 const InclineBenchPress = () => {
   return (
     <>
        <div className={InclineBenchPressStyle["excercisesContainer"]}>
       <div className={InclineBenchPressStyle["excerciseCard"]}>
-        <h2>IMAGE</h2>
+
+      <div className={InclineBenchPressStyle["imageStyle"]}>
+      <img src={InclineBenchPressPic} alt="exercisepic" class="exercise-pic"> 
+      </img>
+        </div>
 
         <p className={InclineBenchPressStyle["excerciseTemplateTitle"]}>Incline Bench Press</p>
 
