@@ -5,25 +5,25 @@ const Chest = () => {
     <div className={WorkoutStyle["workoutContainer"]}>
           <Link to="/workout/chest/dip">
       <div className={WorkoutStyle["workoutCard"]}>
-          <h2 className={WorkoutStyle["workoutText"]}>DIP</h2>
+          <h2 className={WorkoutStyle["workoutText"]}>Dip</h2>
           <p className={WorkoutStyle["workoutText"]}>Workout 1 Description</p>
       </div>
           </Link>
           <Link to="/workout/chest/dip">
       <div className={WorkoutStyle["workoutCard"]}>
-          <h2 className={WorkoutStyle["workoutText"]}>DUMBELL BENCH PRESS</h2>
+          <h2 className={WorkoutStyle["workoutText"]}>Dumbell Bench Press</h2>
           <p className={WorkoutStyle["workoutText"]}>Workout 2 Description</p>
       </div>
           </Link>
           <Link to="/workout/chest/floorpress">
       <div className={WorkoutStyle["workoutCard"]}>
-          <h2 className={WorkoutStyle["workoutText"]}>FLOOR PRESS</h2>
+          <h2 className={WorkoutStyle["workoutText"]}>Floor Press</h2>
           <p className={WorkoutStyle["workoutText"]}>Workout 3 Description</p>
       </div>
           </Link>
           <Link to="/workout/chest/inclinebenchpress">
       <div className={WorkoutStyle["workoutCard"]}>
-          <h2 className={WorkoutStyle["workoutText"]}>INCLINE BENCH PRESS</h2>
+          <h2 className={WorkoutStyle["workoutText"]}>Incline Bench Press</h2>
           <p className={WorkoutStyle["workoutText"]}>Workout 4 Description</p>
       </div>
           </Link>

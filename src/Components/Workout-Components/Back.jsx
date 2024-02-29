@@ -17,7 +17,7 @@ const Back = () => {
           </Link>
           <Link to="/workout/back/cobrastretch">
       <div className={WorkoutStyle["workoutCard"]}>
-          <h2 className={WorkoutStyle["workoutText"]}>Cobra stretch</h2>
+          <h2 className={WorkoutStyle["workoutText"]}>Cobra Stretch</h2>
           <p className={WorkoutStyle["workoutText"]}>Workout 3 Description</p>
       </div>
           </Link>
@@ -29,7 +29,7 @@ const Back = () => {
           </Link>
           <Link to="/workout/back">
       <div className={WorkoutStyle["workoutCard"]}>
-          <h2 className={WorkoutStyle["workoutText"]}>Most clicked</h2>
+          <h2 className={WorkoutStyle["workoutText"]}>Most Clicked</h2>
           <p className={WorkoutStyle["workoutText"]}>Most clicked description</p>
       </div>
           </Link>

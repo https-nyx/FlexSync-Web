@@ -11,19 +11,19 @@ const Arms = () => {
           </Link>
           <Link to="/workout/abs/hammercurl">
       <div className={WorkoutStyle["workoutCard"]}>
-          <h2 className={WorkoutStyle["workoutText"]}>hammer curl</h2>
+          <h2 className={WorkoutStyle["workoutText"]}>Hammer Curl</h2>
           <p className={WorkoutStyle["workoutText"]}>Workout 2 Description</p>
       </div>
           </Link>
           <Link to="/workout/abs/overheadpress">
       <div className={WorkoutStyle["workoutCard"]}>
-        <h2 className={WorkoutStyle["workoutText"]}>overhead press</h2>
+        <h2 className={WorkoutStyle["workoutText"]}>Overhead Press</h2>
           <p className={WorkoutStyle["workoutText"]}>Workout 3 Description</p>
       </div>
           </Link>
           <Link to="/workout/abs/pushup">
       <div className={WorkoutStyle["workoutCard"]}>
-          <h2 className={WorkoutStyle["workoutText"]}>pushup</h2>
+          <h2 className={WorkoutStyle["workoutText"]}>Pushup</h2>
           <p className={WorkoutStyle["workoutText"]}>Workout 4 Description</p>
       </div>
           </Link>
