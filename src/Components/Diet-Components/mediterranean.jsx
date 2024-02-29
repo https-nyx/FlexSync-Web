@@ -1,6 +1,7 @@
 import DietStyle from "../../Styles/diet.module.css";
 import Medimg from "../../assets/images/mediterraneanone.jpg";
 import Medimgtwo from "../../assets/images/mediterraneantwo.jpg";
+import Medimgthree from "../../assets/images/mediterraneanthree.jpg";
 
 const Mediterranean = () => {
   return (
@@ -37,7 +38,7 @@ const Mediterranean = () => {
         </div>
         <br />
         <div className={DietStyle["dietCard"]}>
-          <p> IMAGE HERE</p>
+          <img src={Medimgthree} />
 
           <h1 className={DietStyle["dietTemplate"]}>
             Grilled Mediterranean Veggie Wrap
