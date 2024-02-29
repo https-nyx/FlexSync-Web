@@ -4,10 +4,58 @@
   padding: 20px;
 }
 
+.excercisesContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);  gap: 20px;
+  padding: 20px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
 .workoutCard {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.workoutText{
+  text-align: left;
+  color:white
+}
+
+.excerciseTemplateTitle{
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.excerciseSecondTitle{
+  text-align: left;
+  font-size: xx-large;
+}
+
+.excerciseTemplateExplination{
+  text-align: left;
+  font-size: large;
+}
+
+.excerciseCard {
+  border: 0px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 7px rgba(18, 18, 18, 0.582);
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.imageStyle{
+  display: flex; /* Make it a flex container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border: 3px solid #ccc;
+  box-shadow: 0 4px 7px rgba(18, 18, 18, 0.582);
+  background-color: #c23732; /* Set the background color */
+
 }
 

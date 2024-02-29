@@ -23,6 +23,18 @@ import BicepsCurl from "./Components/Arms-Workout-Components/BicepsCurl";
 import HammerCurl from "./Components/Arms-Workout-Components/HammerCurl";
 import OverheadPress from "./Components/Arms-Workout-Components/OverheadPres";
 import Pushup from "./Components/Arms-Workout-Components/Pushup";
+import Bridge from "./Components/Back-Workout-Components/Bridge";
+import CatStretch from "./Components/Back-Workout-Components/CatStretch";
+import CobraStretch from "./Components/Back-Workout-Components/CobraStretch";
+import Superman from "./Components/Back-Workout-Components/Superman";
+import Dip from "./Components/Chest-Workout-Components/Dip";
+import DumbBellPress from "./Components/Chest-Workout-Components/DumbellBenchPress";
+import FloorPress from "./Components/Chest-Workout-Components/FloorPress";
+import InclineBenchPress from "./Components/Chest-Workout-Components/InclineBenchPress";
+import CalfRaise from "./Components/Legs-Workout-Components/CalfRaise";
+import LateralLunge from "./Components/Legs-Workout-Components/LateralLunge";
+import LegCurl from "./Components/Legs-Workout-Components/LegCurl";
+import Lunges from "./Components/Legs-Workout-Components/Lunges";
 
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -95,6 +107,45 @@ function App() {
         <Route exact path="/workout/abs/pushup">
           <Pushup />
         </Route>
+        <Route exact path="/workout/back/bridge">
+          <Bridge />
+        </Route>
+        <Route exact path="/workout/back/catstretch">
+          <CatStretch />
+        </Route>
+        <Route exact path="/workout/back/cobrastretch">
+          <CobraStretch />
+        </Route>
+        <Route exact path="/workout/back/superman">
+          <Superman />
+        </Route>
+        <Route exact path="/workout/chest/dip">
+          <Dip />
+        </Route>
+        <Route exact path="/workout/chest/dumbellbenchpress">
+          <DumbBellPress />
+        </Route>
+        <Route exact path="/workout/chest/floorpress">
+          <FloorPress />
+        </Route>
+        <Route exact path="/workout/chest/inclinebenchpress">
+          <InclineBenchPress />
+        </Route>
+        <Route exact path="/workout/legs/calfraise">
+          <CalfRaise />
+        </Route>
+        <Route exact path="/workout/legs/lateralunge">
+          <LateralLunge />
+        </Route>
+        <Route exact path="/workout/legs/legcurl">
+          <LegCurl />
+        </Route>
+        <Route exact path="/workout/legs/lunges">
+          <Lunges />
+        </Route>
+
+        
+        
        
       </Switch>
     </Router>

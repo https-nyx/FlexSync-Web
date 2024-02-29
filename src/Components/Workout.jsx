@@ -7,50 +7,50 @@ const Workout = () => {
       <div className={WorkoutStyle["workoutContainer"]}>
         <div className={WorkoutStyle["workoutCard"]}>
           <Link to="/workout/chest">
-            <h2>Chest</h2>
-            <p>Workout 1 Description</p>
+            <h2 className={WorkoutStyle["workoutText"]}>Chest</h2>
+            <p className={WorkoutStyle["workoutText"]}>Workout 1 Description</p>
           </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
           <Link to="/workout/arms">
-            <h2>Arms</h2>
-            <p>Workout 2 Description</p>
+            <h2 className={WorkoutStyle["workoutText"]}>Arms</h2>
+            <p className={WorkoutStyle["workoutText"]}>Workout 2 Description</p>
           </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
           <Link to="/workout/back">
-            <h2>Back</h2>
-            <p>Workout 3 Description</p>
+            <h2 className={WorkoutStyle["workoutText"]}>Back</h2>
+            <p className={WorkoutStyle["workoutText"]}>Workout 3 Description</p>
           </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
           <Link to="/workout/legs">
-            <h2>Legs</h2>
-            <p>Workout 4 Description</p>
+            <h2 className={WorkoutStyle["workoutText"]}>Legs</h2>
+            <p className={WorkoutStyle["workoutText"]}>Workout 4 Description</p>
           </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
           <Link to="/workout/abs">
-            <h2>Abs</h2>
-            <p>Workout 5 Description</p>
+            <h2 className={WorkoutStyle["workoutText"]}>Abs</h2>
+            <p className={WorkoutStyle["workoutText"]}>Workout 5 Description</p>
           </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
           <Link to="/workout/mostclicked">
-            <h2>Most clicked</h2>
-            <p>Most clicked description</p>
+            <h2 className={WorkoutStyle["workoutText"]}>Most clicked</h2>
+            <p className={WorkoutStyle["workoutText"]}>Most clicked description</p>
           </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
           <Link to="/yourworkouts">
-            <h2>Your workouts!</h2>
-            <p>Acess your workouts here!</p>
+            <h2 className={WorkoutStyle["workoutText"]}>Your workouts!</h2>
+            <p className={WorkoutStyle["workoutText"]}>Acess your workouts here!</p>
           </Link>
         </div>
         <div className={WorkoutStyle["workoutCard"]}>
           <Link to="/workoutform">
-            <h2>Create your own workout!</h2>
-            <p>Create your own workout here!</p>
+            <h2 className={WorkoutStyle["workoutText"]}>Create your own workout!</h2>
+            <p className={WorkoutStyle["workoutText"]}>Create your own workout here!</p>
           </Link>
         </div>
       </div>

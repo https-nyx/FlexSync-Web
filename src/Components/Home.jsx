@@ -22,8 +22,10 @@ const Home = () => {
 
       <h3 className={HomeStyle.bannerfitness}>FITNESS</h3>
 
-      <img src={gympic} alt="banner" className={HomeStyle["gympic"]}></img>
-    </div>
+    <img src={gympic} alt="banner" class="gym-pic" className={HomeStyle.gympic}> 
+    </img>
+  </div>
+    
   );
 };
 

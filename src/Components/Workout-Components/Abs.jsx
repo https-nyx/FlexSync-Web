@@ -5,32 +5,32 @@ const Abs = () => {
     <div className={WorkoutStyle["workoutContainer"]}>
       <div className={WorkoutStyle["workoutCard"]}>
         <Link to="/workout/abs/hollowhold">
-          <h2>Hollow Hold</h2>
-          <p>Workout 1 Description</p>
+          <h2 className={WorkoutStyle["workoutText"]}>Hollow Hold</h2>
+          <p className={WorkoutStyle["workoutText"]}>Workout 1 Description</p>
         </Link>
       </div>
       <div className={WorkoutStyle["workoutCard"]}>
         <Link to="/workout/abs/legraise">
-          <h2>Leg Raise</h2>
-          <p>Workout 2 Description</p>
+          <h2 className={WorkoutStyle["workoutText"]}>Leg Raise</h2>
+          <p className={WorkoutStyle["workoutText"]}>Workout 2 Description</p>
         </Link>
       </div>
       <div className={WorkoutStyle["workoutCard"]}>
         <Link to="/workout/abs/plank">
-          <h2>Plank</h2>
-          <p>Workout 3 Description</p>
+          <h2 className={WorkoutStyle["workoutText"]}>Plank</h2>
+          <p className={WorkoutStyle["workoutText"]}>Workout 3 Description</p>
         </Link>
       </div>
       <div className={WorkoutStyle["workoutCard"]}>
         <Link to="/workout/abs/reversecrunch">
-          <h2>Reverse Crunch</h2>
-          <p>Workout 4 Description</p>
+          <h2 className={WorkoutStyle["workoutText"]}>Reverse Crunch</h2>
+          <p className={WorkoutStyle["workoutText"]}>Workout 4 Description</p>
         </Link>
       </div>
       <div className={WorkoutStyle["workoutCard"]}>
         <Link to="/workout/abs/workout">
-          <h2>Most clicked</h2>
-          <p>Most clicked description</p>
+          <h2 className={WorkoutStyle["workoutText"]}>Most clicked</h2>
+          <p className={WorkoutStyle["workoutText"]}>Most clicked description</p>
         </Link>
       </div>
     </div>

@@ -4,45 +4,33 @@ const Back = () => {
   return (
     <div className={WorkoutStyle["workoutContainer"]}>
       <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/back">
-          <h2>BACK WORKOUT</h2>
-          <p>Workout 1 Description</p>
+        <Link to="/workout/back/bridge">
+          <h2 className={WorkoutStyle["workoutText"]}>Bridge</h2>
+          <p className={WorkoutStyle["workoutText"]}>Workout 1 Description</p>
+        </Link>
+      </div>
+      <div className={WorkoutStyle["workoutCard"]}>
+        <Link to="/workout/back/catstretch">
+          <h2 className={WorkoutStyle["workoutText"]}>Cat stretch</h2>
+          <p className={WorkoutStyle["workoutText"]}>Workout 2 Description</p>
+        </Link>
+      </div>
+      <div className={WorkoutStyle["workoutCard"]}>
+        <Link to="/workout/back/cobrastretch">
+          <h2 className={WorkoutStyle["workoutText"]}>Cobra stretch</h2>
+          <p className={WorkoutStyle["workoutText"]}>Workout 3 Description</p>
+        </Link>
+      </div>
+      <div className={WorkoutStyle["workoutCard"]}>
+        <Link to="/workout/back/superman">
+          <h2 className={WorkoutStyle["workoutText"]}>Superman</h2>
+          <p className={WorkoutStyle["workoutText"]}>Workout 4 Description</p>
         </Link>
       </div>
       <div className={WorkoutStyle["workoutCard"]}>
         <Link to="/workout/back">
-          <h2>BACK WORKOUT</h2>
-          <p>Workout 2 Description</p>
-        </Link>
-      </div>
-      <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/back">
-          <h2>BACK WORKOUT</h2>
-          <p>Workout 3 Description</p>
-        </Link>
-      </div>
-      <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/back">
-          <h2>BACK WORKOUT</h2>
-          <p>Workout 4 Description</p>
-        </Link>
-      </div>
-      <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/back">
-          <h2>BACK WORKOUT</h2>
-          <p>Workout 5 Description</p>
-        </Link>
-      </div>
-      <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/back">
-          <h2>BACK WORKOUT</h2>
-          <p>Workout 6 Description</p>
-        </Link>
-      </div>
-      <div className={WorkoutStyle["workoutCard"]}>
-        <Link to="/workout/back">
-          <h2>Most clicked</h2>
-          <p>Most clicked description</p>
+          <h2 className={WorkoutStyle["workoutText"]}>Most clicked</h2>
+          <p className={WorkoutStyle["workoutText"]}>Most clicked description</p>
         </Link>
       </div>
     </div>
