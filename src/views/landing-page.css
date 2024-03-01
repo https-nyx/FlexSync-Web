@@ -8,7 +8,7 @@
 }
 .landing-page-top-container {
   width: 100%;
-  height: 600px;
+  height: 623px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -81,6 +81,12 @@
 }
 .landing-page-contact:hover {
   cursor: pointer;
+}
+.landing-page-navlink {
+  display: contents;
+}
+.landing-page-component {
+  text-decoration: none;
 }
 .landing-page-burger-menu {
   display: none;
@@ -310,6 +316,9 @@
   height: 24px;
 }
 @media(max-width: 991px) {
+  .landing-page-navbar {
+    width: 100%;
+  }
   .landing-page-hero {
     padding-left: var(--dl-space-space-tripleunit);
     padding-right: var(--dl-space-space-tripleunit);
@@ -343,6 +352,9 @@
   }
 }
 @media(max-width: 479px) {
+  .landing-page-top-container {
+    height: 879px;
+  }
   .landing-page-banner {
     padding-top: 32px;
     padding-left: var(--dl-space-space-unit);

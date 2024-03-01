@@ -1,18 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet'
 
-import SolidButton from "../components/solid-button";
-import FeatureCard21 from "../components/feature-card21";
-import "./features-page.css";
+import SolidButton from '../components/solid-button'
+import FeatureCard21 from '../components/feature-card21'
+import './features-page.css'
 
 const FeaturesPage = (props) => {
   return (
     <div className="features-page-container">
       <Helmet>
-        <title>Features</title>
-        <meta property="og:title" content="Features-Page - Travel Agency" />
+        <title>Features-Page - FlexSync</title>
+        <meta property="og:title" content="Features-Page - FlexSync" />
       </Helmet>
       <div className="features-page-top-container">
         <nav data-role="Header" className="features-page-navbar">
@@ -31,11 +31,14 @@ const FeaturesPage = (props) => {
               <Link to="/preview-page" className="features-page-preview">
                 Preview
               </Link>
-              <a href="#contact" className="features-page-contact">
-                Contact
-              </a>
+              <span className="features-page-contact">Contact</span>
             </div>
-            <SolidButton button="Get Started"></SolidButton>
+            <Link to="/sign-up-page" className="features-page-navlink">
+              <SolidButton
+                button="Get Started"
+                className="features-page-component"
+              ></SolidButton>
+            </Link>
           </div>
           <div data-role="BurgerMenu" className="features-page-burger-menu">
             <svg viewBox="0 0 1024 1024" className="features-page-burger-menu1">
@@ -72,7 +75,7 @@ const FeaturesPage = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: " ",
+                    __html: ' ',
                   }}
                 />
               </span>
@@ -122,28 +125,39 @@ const FeaturesPage = (props) => {
         </nav>
         <div className="features-page-features1">
           <h1 className="features-page-text07">
-            All these impressive features
+            <span className="features-page-text08">
+              All these
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
+            <span className="features-page-text09">impressive features</span>
+            <br></br>
+            <br></br>
+            <br></br>
           </h1>
           <div className="features-page-container1">
             <FeatureCard21
-              rootClassName="rootClassName"
               title="Workout Guide"
               description="Our app features a comprehensive workout guide designed to help you achieve your fitness goals."
+              rootClassName="rootClassName"
             ></FeatureCard21>
             <FeatureCard21
-              rootClassName="rootClassName2"
               title="Diet Guide"
               description="Our app includes a comprehensive diet guide feature to help you achieve your health and fitness goals."
+              rootClassName="rootClassName2"
             ></FeatureCard21>
             <FeatureCard21
-              rootClassName="rootClassName3"
               title="Custom Workout"
               description="Our app offers a custom workout feature, allowing users to tailor their fitness journey to their unique needs and goals."
+              rootClassName="rootClassName3"
             ></FeatureCard21>
             <FeatureCard21
-              rootClassName="rootClassName1"
               title="Custom Meal Plan"
               description="Our app provides a custom meal plan feature, tailored to your needs, for achieving your health and fitness goals."
+              rootClassName="rootClassName1"
             ></FeatureCard21>
           </div>
         </div>
@@ -155,11 +169,11 @@ const FeaturesPage = (props) => {
             <span>© 2024 Early Access, All Rights Reserved </span>
           </div>
           <div className="features-page-follow-container1">
-            <span className="features-page-text09">
+            <span className="features-page-text14">
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
-                  __html: " ",
+                  __html: ' ',
                 }}
               />
             </span>
@@ -208,7 +222,7 @@ const FeaturesPage = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FeaturesPage;
+export default FeaturesPage

@@ -1,17 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet'
 
-import SolidButton from "../components/solid-button";
-import "./landing-page.css";
+import SolidButton from '../components/solid-button'
+import './landing-page.css'
 
 const LandingPage = (props) => {
   return (
     <div className="landing-page-container">
       <Helmet>
         <title>FlexSync</title>
-        <meta property="og:title" content="Travel Agency" />
+        <meta property="og:title" content="FlexSync" />
       </Helmet>
       <div className="landing-page-top-container">
         <nav data-role="Header" className="landing-page-navbar">
@@ -28,11 +28,14 @@ const LandingPage = (props) => {
               <Link to="/preview-page" className="landing-page-preview">
                 Preview
               </Link>
-              <a href="#contact" className="landing-page-contact">
-                Contact
-              </a>
+              <span className="landing-page-contact">Contact</span>
             </div>
-            <SolidButton button="Get Started"></SolidButton>
+            <Link to="/sign-up-page" className="landing-page-navlink">
+              <SolidButton
+                button="Get Started"
+                className="landing-page-component"
+              ></SolidButton>
+            </Link>
           </div>
           <div data-role="BurgerMenu" className="landing-page-burger-menu">
             <svg viewBox="0 0 1024 1024" className="landing-page-burger-menu1">
@@ -69,7 +72,7 @@ const LandingPage = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: " ",
+                    __html: ' ',
                   }}
                 />
               </span>
@@ -129,7 +132,7 @@ const LandingPage = (props) => {
                 Fitness is not a destination, it&apos;s a way of life.&quot;
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: " ",
+                    __html: ' ',
                   }}
                 />
               </span>
@@ -155,7 +158,7 @@ const LandingPage = (props) => {
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
-                  __html: " ",
+                  __html: ' ',
                 }}
               />
             </span>
@@ -204,7 +207,7 @@ const LandingPage = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LandingPage;
+export default LandingPage

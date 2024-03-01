@@ -22,15 +22,15 @@ const FeatureCard21 = (props) => {
 }
 
 FeatureCard21.defaultProps = {
-  rootClassName: '',
   title: 'Lorem ipsum',
+  rootClassName: '',
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem lorem, malesuada in metus vitae, scelerisque accumsan ipsum.',
 }
 
 FeatureCard21.propTypes = {
-  rootClassName: PropTypes.string,
   title: PropTypes.string,
+  rootClassName: PropTypes.string,
   description: PropTypes.string,
 }
 

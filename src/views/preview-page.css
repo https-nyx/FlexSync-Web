@@ -85,6 +85,12 @@
 .preview-page-contact:hover {
   cursor: pointer;
 }
+.preview-page-navlink {
+  display: contents;
+}
+.preview-page-component {
+  text-decoration: none;
+}
 .preview-page-burger-menu {
   display: none;
   align-items: center;

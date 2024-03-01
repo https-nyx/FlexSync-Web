@@ -8,18 +8,20 @@ import {
 } from 'react-router-dom'
 
 import './style.css'
-import LandingPage from './views/landing-page'
-import FeaturesPage from './views/features-page'
 import PreviewPage from './views/preview-page'
+import FeaturesPage from './views/features-page'
+import SignUpPage from './views/sign-up-page'
+import LandingPage from './views/landing-page'
 import NotFound from './views/not-found'
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route component={LandingPage} exact path="/" />
-        <Route component={FeaturesPage} exact path="/features-page" />
         <Route component={PreviewPage} exact path="/preview-page" />
+        <Route component={FeaturesPage} exact path="/features-page" />
+        <Route component={SignUpPage} exact path="/sign-up-page" />
+        <Route component={LandingPage} exact path="/" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>

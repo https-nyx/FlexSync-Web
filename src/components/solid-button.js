@@ -6,7 +6,7 @@ import './solid-button.css'
 
 const SolidButton = (props) => {
   return (
-    <div className="solid-button-container">
+    <div className={`solid-button-container ${props.rootClassName} `}>
       <button className="solid-button-button button Button">
         {props.button}
       </button>
@@ -15,10 +15,12 @@ const SolidButton = (props) => {
 }
 
 SolidButton.defaultProps = {
+  rootClassName: '',
   button: 'Button',
 }
 
 SolidButton.propTypes = {
+  rootClassName: PropTypes.string,
   button: PropTypes.string,
 }
 
