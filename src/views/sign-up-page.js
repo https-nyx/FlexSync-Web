@@ -1,12 +1,45 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import SolidButton from '../components/solid-button'
-import './sign-up-page.css'
+import SolidButton from "../components/solid-button";
+import "./sign-up-page.css";
 
 const SignUpPage = (props) => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [age, setAge] = useState("");
+  const [gender, setGender] = useState(0);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const account = { username, password, age, gender };
+
+    const response = await fetch(
+      "https://flexsync-api.onrender.com/api/auth/signup",
+      {
+        method: "POST",
+        body: JSON.stringify(account),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    const json = await response.json();
+
+    if (!response.ok) {
+      setError(json.error);
+    } else {
+      setUsername("");
+      setPassword("");
+      setAge("");
+      setGender(0);
+      console.log("New account created", json);
+    }
+  };
+
   return (
     <div className="sign-up-page-container">
       <Helmet>
@@ -71,7 +104,7 @@ const SignUpPage = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -128,32 +161,50 @@ const SignUpPage = (props) => {
             />
             <div className="sign-up-page-form">
               <h1 className="sign-up-page-text07">Create an Account</h1>
-              <input
-                type="text"
-                placeholder="Username"
-                className="sign-up-page-username input"
-              />
-              <input
-                type="password"
-                placeholder="Password"
-                className="sign-up-page-password input"
-              />
-              <select className="sign-up-page-age">
-                <option>Age</option>
-                <option value="13-19">13-19</option>
-                <option value="20-29">20-29</option>
-                <option value="30-64">30-64</option>
-                <option value="65+">65+</option>
-              </select>
-              <select className="sign-up-page-gender">
-                <option>Gender</option>
-                <option value="1">Male</option>
-                <option value="2">Female</option>
-              </select>
-              <SolidButton
-                button="Sign Up"
-                rootClassName="solid-button-root-class-name"
-              ></SolidButton>
+              <div>
+                <form onSubmit={handleSubmit}>
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    className="sign-up-page-username input"
+                    onChange={(e) => setUsername(e.target.value)}
+                    value={username}
+                  />
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    className="sign-up-page-password input"
+                    onChange={(e) => setPassword(e.target.value)}
+                    value={password}
+                  />
+                  <select
+                    className="sign-up-page-age"
+                    onChange={(e) => setAge(e.target.value)}
+                    value={age}
+                  >
+                    <option value="">Age</option>
+                    <option value="13-19">13-19</option>
+                    <option value="20-29">20-29</option>
+                    <option value="30-64">30-64</option>
+                    <option value="65+">65+</option>
+                  </select>
+                  <select
+                    className="sign-up-page-gender"
+                    onChange={(e) => setGender(e.target.value)}
+                    value={gender}
+                  >
+                    <option value={0}>Gender</option>
+                    <option value={1}>Male</option>
+                    <option value={2}>Female</option>
+                  </select>
+                  <SolidButton
+                    button="Sign Up"
+                    rootClassName="solid-button-root-class-name"
+                    type="submit"
+                  ></SolidButton>
+                </form>
+              </div>
+
               <div className="sign-up-page-login-reroute">
                 <span className="sign-up-page-text08">
                   <span>Already have an account?</span>
@@ -176,7 +227,7 @@ const SignUpPage = (props) => {
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -225,7 +276,7 @@ const SignUpPage = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SignUpPage
+export default SignUpPage;
