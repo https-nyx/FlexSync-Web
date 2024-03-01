@@ -11,32 +11,46 @@ const SignUpPage = (props) => {
   const [password, setPassword] = useState("");
   const [age, setAge] = useState("");
   const [gender, setGender] = useState(0);
+  const [error, setError] = useState(null);
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const account = { username, password, age, gender };
+  const url = "https://flexsync-api.onrender.com/api/auth/signup";
 
-    const response = await fetch(
-      "https://flexsync-api.onrender.com/api/auth/signup",
-      {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const account = {
+      username,
+      password,
+      age,
+      gender,
+    };
+
+    try {
+      const response = await fetch(url, {
         method: "POST",
         body: JSON.stringify(account),
         headers: {
           "Content-Type": "application/json",
         },
+      });
+
+      if (!response.ok) {
+        const requestData = await response.json();
+        setError(requestData.error);
+        console.error(
+          "Error occurred during form submission:",
+          requestData.error
+        );
+      } else {
+        setUsername("");
+        setPassword("");
+        setAge("");
+        setGender(0);
+        console.log("New account created");
       }
-    );
-
-    const json = await response.json();
-
-    if (!response.ok) {
-      setError(json.error);
-    } else {
-      setUsername("");
-      setPassword("");
-      setAge("");
-      setGender(0);
-      console.log("New account created", json);
+    } catch (error) {
+      setError(error.message);
+      console.error("Error occurred during form submission:", error.message);
     }
   };
 
@@ -162,7 +176,7 @@ const SignUpPage = (props) => {
             <div className="sign-up-page-form">
               <h1 className="sign-up-page-text07">Create an Account</h1>
               <div>
-                <form onSubmit={handleSubmit}>
+                <form>
                   <input
                     type="text"
                     placeholder="Username"
@@ -200,7 +214,7 @@ const SignUpPage = (props) => {
                   <SolidButton
                     button="Sign Up"
                     rootClassName="solid-button-root-class-name"
-                    type="submit"
+                    onClick={handleSubmit}
                   ></SolidButton>
                 </form>
               </div>
