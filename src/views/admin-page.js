@@ -1,96 +1,156 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import SolidButton from '../components/solid-button'
-import FeatureCard21 from '../components/feature-card21'
-import './features-page.css'
+import SolidButton from "../components/solid-button";
+import "./admin-page.css";
 
-const FeaturesPage = (props) => {
+const AdminPage = (props) => {
+  const [count, setCount] = useState(0);
+  const [menCount, setMenCount] = useState(0);
+  const [womenCount, setWomenCount] = useState(0);
+  const [error, setError] = useState(null);
+
+  const menUrl = "https://flexsync-api.onrender.com/api/account/men";
+  const womenUrl = "https://flexsync-api.onrender.com/api/account/women";
+
+  const headers = {
+    "Content-Type": "application/json",
+  };
+
+  const handleMenSubmit = async (e) => {
+    try {
+      const response = await fetch(menUrl, {
+        method: "GET",
+        headers,
+      });
+
+      const requestData = await response.json();
+
+      if (!response.ok) {
+        setError(requestData.error);
+        console.error(
+          "Error occurred during form submission:",
+          requestData.error
+        );
+      } else {
+        setMenCount(requestData.count);
+        console.log("Fetched data successfully!");
+      }
+    } catch (error) {
+      setError(error.message);
+      console.error("Error occurred during form submission:", error.message);
+    }
+  };
+
+  const handleWomenSubmit = async (e) => {
+    try {
+      const response = await fetch(womenUrl, {
+        method: "GET",
+        headers,
+      });
+
+      const requestData = await response.json();
+
+      if (!response.ok) {
+        setError(requestData.error);
+        console.error(
+          "Error occurred during form submission:",
+          requestData.error
+        );
+      } else {
+        setWomenCount(requestData.count);
+        console.log("Fetched data successfully!");
+      }
+    } catch (error) {
+      setError(error.message);
+      console.error("Error occurred during form submission:", error.message);
+    }
+  };
+
+  useEffect(() => {
+    handleMenSubmit();
+    handleWomenSubmit();
+  }, []);
+
   return (
-    <div className="features-page-container">
+    <div className="admin-page-container">
       <Helmet>
-        <title>Features-Page - FlexSync</title>
-        <meta property="og:title" content="Features-Page - FlexSync" />
+        <title>Admin-Page - FlexSync</title>
+        <meta property="og:title" content="Admin-Page - FlexSync" />
       </Helmet>
-      <div className="features-page-top-container">
-        <nav data-role="Header" className="features-page-navbar">
-          <h1 className="features-page-logo">
+      <div className="admin-page-top-container">
+        <nav data-role="Header" className="admin-page-navbar">
+          <h1 className="admin-page-logo">
             <span>FLEX</span>
-            <span className="features-page-text01">SYNC</span>
+            <span className="admin-page-text01">SYNC</span>
           </h1>
-          <div className="features-page-right-side">
-            <div className="features-page-links-container">
-              <Link to="/" className="features-page-home">
-                Home
-              </Link>
-              <Link to="/features-page" className="features-page-features">
+          <div className="admin-page-right-side">
+            <div className="admin-page-links-container">
+              <span className="admin-page-home">Home</span>
+              <Link to="/features-page" className="admin-page-features">
                 Features
               </Link>
-              <Link to="/preview-page" className="features-page-preview">
+              <Link to="/preview-page" className="admin-page-preview">
                 Preview
               </Link>
-              <a href="#contact" className="features-page-contact">
-                Contact
-              </a>
+              <span className="admin-page-contact">Contact</span>
             </div>
-            <Link to="/sign-up-page" className="features-page-navlink">
-              <SolidButton
-                button="Get Started"
-                className="features-page-component"
-              ></SolidButton>
-            </Link>
+            <SolidButton
+              button="Log Out"
+              className="admin-page-component"
+            ></SolidButton>
           </div>
-          <div data-role="BurgerMenu" className="features-page-burger-menu">
-            <svg viewBox="0 0 1024 1024" className="features-page-burger-menu1">
+          <div data-role="BurgerMenu" className="admin-page-burger-menu">
+            <svg viewBox="0 0 1024 1024" className="admin-page-burger-menu1">
               <path d="M810.667 725.333h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
               <path d="M810.667 426.667h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
               <path d="M810.667 128h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
             </svg>
           </div>
-          <div data-role="MobileMenu" className="features-page-mobile-menu">
-            <div className="features-page-nav">
-              <div className="features-page-top">
+          <div data-role="MobileMenu" className="admin-page-mobile-menu">
+            <div className="admin-page-nav">
+              <div className="admin-page-top">
                 <h1>Travel</h1>
                 <div
                   data-role="CloseMobileMenu"
-                  className="features-page-close-menu"
+                  className="admin-page-close-menu"
                 >
-                  <svg viewBox="0 0 1024 1024" className="features-page-icon03">
+                  <svg viewBox="0 0 1024 1024" className="admin-page-icon03">
                     <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                   </svg>
                 </div>
               </div>
-              <div className="features-page-right-side1">
-                <div className="features-page-links-container1">
-                  <span className="features-page-text02">Home</span>
-                  <span className="features-page-text03">About</span>
-                  <span className="features-page-text04">Tour Packages</span>
+              <div className="admin-page-right-side1">
+                <div className="admin-page-links-container1">
+                  <span className="admin-page-text02">Home</span>
+                  <span className="admin-page-text03">About</span>
+                  <span className="admin-page-text04">Tour Packages</span>
                   <span>Contact</span>
                 </div>
                 <SolidButton button="Explore places"></SolidButton>
               </div>
             </div>
-            <div className="features-page-follow-container">
-              <span className="features-page-text06">
+            <div className="admin-page-follow-container">
+              <span className="admin-page-text06">
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
-              <div className="features-page-icons-container">
+              <div className="admin-page-icons-container">
                 <a
                   href="https://instagram.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="features-page-link"
+                  className="admin-page-link"
                 >
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
-                    className="features-page-icon05"
+                    className="admin-page-icon05"
                   >
                     <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
                   </svg>
@@ -99,11 +159,11 @@ const FeaturesPage = (props) => {
                   href="https://facebook.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="features-page-link1"
+                  className="admin-page-link1"
                 >
                   <svg
                     viewBox="0 0 602.2582857142856 1024"
-                    className="features-page-icon07"
+                    className="admin-page-icon07"
                   >
                     <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
                   </svg>
@@ -112,11 +172,11 @@ const FeaturesPage = (props) => {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="features-page-link2"
+                  className="admin-page-link2"
                 >
                   <svg
                     viewBox="0 0 950.8571428571428 1024"
-                    className="features-page-icon09"
+                    className="admin-page-icon09"
                   >
                     <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
                   </svg>
@@ -125,70 +185,78 @@ const FeaturesPage = (props) => {
             </div>
           </div>
         </nav>
-        <div className="features-page-features1">
-          <h1 className="features-page-text07">
-            <span className="features-page-text08">
-              All these
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: ' ',
-                }}
+        <div className="admin-page-hero">
+          <div className="admin-page-admin-data">
+            <div className="admin-page-blog-post-card">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIxfHxhcm1zJTIwZmxleHxlbnwwfHx8fDE3MDkyMjYzOTN8MA&amp;ixlib=rb-4.0.3&amp;w=1000"
+                className="admin-page-image"
               />
-            </span>
-            <span className="features-page-text09">impressive features</span>
-            <br></br>
-            <br></br>
-            <br></br>
-          </h1>
-          <div className="features-page-container1">
-            <FeatureCard21
-              title="Workout Guide"
-              description="Our app features a comprehensive workout guide designed to help you achieve your fitness goals."
-              rootClassName="rootClassName"
-            ></FeatureCard21>
-            <FeatureCard21
-              title="Diet Guide"
-              description="Our app includes a comprehensive diet guide feature to help you achieve your health and fitness goals."
-              rootClassName="rootClassName2"
-            ></FeatureCard21>
-            <FeatureCard21
-              title="Custom Workout"
-              description="Our app offers a custom workout feature, allowing users to tailor their fitness journey to their unique needs and goals."
-              rootClassName="rootClassName3"
-            ></FeatureCard21>
-            <FeatureCard21
-              title="Custom Meal Plan"
-              description="Our app provides a custom meal plan feature, tailored to your needs, for achieving your health and fitness goals."
-              rootClassName="rootClassName1"
-            ></FeatureCard21>
+              <div className="admin-page-container1">
+                <span className="admin-page-text07">All Accounts</span>
+                <span className="admin-page-text08">Count: {count}</span>
+              </div>
+            </div>
+            <div className="admin-page-blog-post-card1">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1580491934424-f4d543ccbf05?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEwfHxhYnN8ZW58MHx8fHwxNzA5MjI2NDQxfDA&amp;ixlib=rb-4.0.3&amp;w=1000"
+                className="admin-page-image1"
+              />
+              <div className="admin-page-container2" onClick={handleMenSubmit}>
+                <span className="admin-page-text09">
+                  <span>Men Accounts</span>
+                  <br></br>
+                </span>
+                <span className="admin-page-text12">Count: {menCount}</span>
+              </div>
+            </div>
+            <div className="admin-page-blog-post-card2">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fGxlZyUyMHdvcmtvdXR8ZW58MHx8fHwxNzA5MjI2NTA4fDA&amp;ixlib=rb-4.0.3&amp;w=1000"
+                className="admin-page-image2"
+              />
+              <div
+                className="admin-page-container3"
+                onClick={handleWomenSubmit}
+              >
+                <span className="admin-page-text13">
+                  <span>Women Accounts</span>
+                  <br></br>
+                </span>
+                <span className="admin-page-text16">Count: {womenCount}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="contact" className="features-page-footer">
-        <div className="features-page-menu">
+      <div id="contact" className="admin-page-footer">
+        <div className="admin-page-menu">
           <h1>FlexSync</h1>
-          <div className="features-page-links-container2">
+          <div className="admin-page-links-container2">
             <span>© 2024 Early Access, All Rights Reserved </span>
           </div>
-          <div className="features-page-follow-container1">
-            <span className="features-page-text14">
+          <div className="admin-page-follow-container1">
+            <span className="admin-page-text18">
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
-            <div className="features-page-icons-container1">
+            <div className="admin-page-icons-container1">
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="features-page-link3"
+                className="admin-page-link3"
               >
                 <svg
                   viewBox="0 0 877.7142857142857 1024"
-                  className="features-page-icon11"
+                  className="admin-page-icon11"
                 >
                   <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
                 </svg>
@@ -197,11 +265,11 @@ const FeaturesPage = (props) => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="features-page-link4"
+                className="admin-page-link4"
               >
                 <svg
                   viewBox="0 0 602.2582857142856 1024"
-                  className="features-page-icon13"
+                  className="admin-page-icon13"
                 >
                   <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
                 </svg>
@@ -210,11 +278,11 @@ const FeaturesPage = (props) => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="features-page-link5"
+                className="admin-page-link5"
               >
                 <svg
                   viewBox="0 0 950.8571428571428 1024"
-                  className="features-page-icon15"
+                  className="admin-page-icon15"
                 >
                   <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
                 </svg>
@@ -224,7 +292,7 @@ const FeaturesPage = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FeaturesPage
+export default AdminPage;

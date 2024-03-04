@@ -7,16 +7,43 @@
   width: auto;
   border: none;
   padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-quadruple);
+  padding-left: var(--dl-space-space-doubleunit);
   border-radius: 50px;
-  padding-right: var(--dl-space-space-quadruple);
+  padding-right: var(--dl-space-space-doubleunit);
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: var(--dl-color-primary-100);
 }
 .solid-button-root-class-name {
   width: auto;
-  height: 100%;
+  height: auto;
   position: 0px;
   align-self: center;
   margin-bottom: -15px;
+}
+.solid-button-root-class-name1 {
+  width: auto;
+  height: auto;
+  position: 0px;
+  align-self: center;
+  margin-bottom: -15px;
+}
+.solid-button-root-class-name2 {
+  width: auto;
+  height: 100%;
+  position: 0px;
+  align-self: center;
+  margin-top: -10px;
+  margin-bottom: -15px;
+}
+.solid-button-root-class-name3 {
+  width: auto;
+  height: auto;
+  position: 0px;
+  align-self: center;
+  margin-bottom: -15px;
+}
+@media(max-width: 1200px) {
+  .solid-button-root-class-name1 {
+    margin-bottom: 0px;
+  }
 }

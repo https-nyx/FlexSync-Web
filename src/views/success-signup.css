@@ -1,4 +1,4 @@
-.landing-page-container {
+.success-signup-container {
   width: 100%;
   height: auto;
   display: flex;
@@ -6,15 +6,15 @@
   align-items: center;
   flex-direction: column;
 }
-.landing-page-top-container {
+.success-signup-top-container {
   width: 100%;
-  height: 685px;
+  height: 623px;
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #312f2f;
 }
-.landing-page-navbar {
+.success-signup-navbar {
   width: 1025px;
   display: flex;
   padding: var(--dl-space-space-doubleunit);
@@ -23,33 +23,33 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.landing-page-logo {
+.success-signup-logo {
   color: var(--dl-color-gray-white);
 }
-.landing-page-text01 {
+.success-signup-text01 {
   color: var(--dl-color-primary-100);
 }
-.landing-page-right-side {
+.success-signup-right-side {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.landing-page-links-container {
+.success-signup-links-container {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.landing-page-home {
+.success-signup-home {
   color: var(--dl-color-gray-white);
   transition: 0.3s;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.landing-page-home:hover {
+.success-signup-home:hover {
   cursor: pointer;
 }
-.landing-page-features {
+.success-signup-features {
   color: var(--dl-color-gray-white);
   transition: 0.3s;
   margin-right: var(--dl-space-space-doubleunit);
@@ -61,44 +61,41 @@
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-.landing-page-features:hover {
+.success-signup-features:hover {
   cursor: pointer;
 }
-.landing-page-preview {
+.success-signup-preview {
   color: var(--dl-color-gray-white);
   transition: 0.3s;
   margin-right: var(--dl-space-space-doubleunit);
   text-decoration: none;
 }
-.landing-page-preview:hover {
+.success-signup-preview:hover {
   cursor: pointer;
 }
-.landing-page-contact {
+.success-signup-contact {
   color: var(--dl-color-gray-white);
   transition: 0.3s;
   margin-right: var(--dl-space-space-doubleunit);
   text-decoration: none;
 }
-.landing-page-contact:hover {
+.success-signup-contact:hover {
   cursor: pointer;
 }
-.landing-page-navlink {
-  display: contents;
-}
-.landing-page-component {
+.success-signup-component {
   text-decoration: none;
 }
-.landing-page-burger-menu {
+.success-signup-burger-menu {
   display: none;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.landing-page-burger-menu1 {
+.success-signup-burger-menu1 {
   width: 24px;
   height: 24px;
 }
-.landing-page-mobile-menu {
+.success-signup-mobile-menu {
   top: 0px;
   flex: 0 0 auto;
   left: 0px;
@@ -112,13 +109,13 @@
   justify-content: space-between;
   background-color: #fff;
 }
-.landing-page-nav {
+.success-signup-nav {
   flex: 0 0 auto;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.landing-page-top {
+.success-signup-top {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -127,77 +124,77 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.landing-page-close-menu {
+.success-signup-close-menu {
   flex: 0 0 auto;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.landing-page-icon03 {
+.success-signup-icon03 {
   width: 24px;
   height: 24px;
 }
-.landing-page-right-side1 {
+.success-signup-right-side1 {
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
 }
-.landing-page-links-container1 {
+.success-signup-links-container1 {
   display: flex;
   align-items: flex-start;
   margin-bottom: 16px;
   flex-direction: column;
   justify-content: space-between;
 }
-.landing-page-text02 {
+.success-signup-text02 {
   margin-bottom: 8px;
 }
-.landing-page-text03 {
+.success-signup-text03 {
   margin-bottom: 8px;
 }
-.landing-page-text04 {
+.success-signup-text04 {
   margin-bottom: 8px;
 }
-.landing-page-follow-container {
+.success-signup-follow-container {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
 }
-.landing-page-text06 {
+.success-signup-text06 {
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.landing-page-icons-container {
+.success-signup-icons-container {
   width: 100px;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
 }
-.landing-page-link {
+.success-signup-link {
   display: contents;
 }
-.landing-page-icon05 {
+.success-signup-icon05 {
   width: 24px;
   height: 24px;
 }
-.landing-page-link1 {
+.success-signup-link1 {
   display: contents;
 }
-.landing-page-icon07 {
+.success-signup-icon07 {
   width: 24px;
   height: 24px;
 }
-.landing-page-link2 {
+.success-signup-link2 {
   display: contents;
 }
-.landing-page-icon09 {
+.success-signup-icon09 {
   width: 24px;
   height: 24px;
 }
-.landing-page-hero {
+.success-signup-hero {
   flex: 1;
   width: 100%;
   display: flex;
@@ -210,35 +207,32 @@
   padding-bottom: var(--dl-space-space-tripleunit);
   justify-content: space-between;
 }
-.landing-page-banner {
+.success-signup-banner {
   width: 100%;
-  height: 453px;
   display: flex;
   padding: 48px;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
-.landing-page-text07 {
+.success-signup-text07 {
   color: var(--dl-color-gray-white);
-  height: 192px;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
 }
-.landing-page-text11 {
+.success-signup-text12 {
   color: var(--dl-color-gray-white);
-  font-size: 1.2em;
   max-width: 1400px;
   margin-top: 32px;
   text-align: center;
   margin-bottom: 32px;
 }
-.landing-page-btn-group {
+.success-signup-btn-group {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-.landing-page-learn-more {
+.success-signup-button {
   color: var(--dl-color-gray-white);
   transition: 0.3s;
   margin-left: var(--dl-space-space-unit);
@@ -249,10 +243,10 @@
   text-decoration: none;
   background-color: var(--dl-color-primary-100);
 }
-.landing-page-learn-more:hover {
+.success-signup-button:hover {
   transform: scale(1.02);
 }
-.landing-page-footer {
+.success-signup-footer {
   color: var(--dl-color-gray-white);
   width: 100%;
   height: 6rem;
@@ -263,303 +257,134 @@
   justify-content: center;
   background-color: var(--dl-color-gray-black);
 }
-.landing-page-mobile-footer {
-  flex: 0 0 auto;
+.success-signup-menu {
   width: 100%;
-  height: 100px;
-  display: none;
-  align-items: flex-start;
-}
-.landing-page-icons-container1 {
-  width: 100px;
   display: flex;
-  align-items: flex-start;
+  max-width: 1000px;
+  align-items: center;
   flex-direction: row;
+  justify-content: space-between;
 }
-.landing-page-link3 {
-  display: contents;
-}
-.landing-page-icon11 {
-  fill: var(--dl-color-gray-white);
-  width: 24px;
-  height: 24px;
-}
-.landing-page-link4 {
-  display: contents;
-}
-.landing-page-icon13 {
-  fill: var(--dl-color-gray-white);
-  width: 24px;
-  height: 24px;
-}
-.landing-page-link5 {
-  display: contents;
-}
-.landing-page-icon15 {
-  fill: var(--dl-color-gray-white);
-  width: 24px;
-  height: 24px;
-}
-.landing-page-links-container2 {
+.success-signup-links-container2 {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.landing-page-desktop-footer {
-  flex: 0 0 auto;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: flex-start;
-}
-.landing-page-menu {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  max-width: 100%;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.landing-page-logo2 {
-  margin-left: var(--dl-space-space-tripleunit);
-}
-.landing-page-links-container3 {
+.success-signup-follow-container1 {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.landing-page-follow-container1 {
-  display: flex;
-  align-items: center;
-  margin-left: 4.5em;
-  margin-right: 4.5em;
+  margin-left: 50px;
   flex-direction: column;
   justify-content: space-between;
 }
-.landing-page-text20 {
+.success-signup-text14 {
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.landing-page-icons-container2 {
+.success-signup-icons-container1 {
   width: 100px;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
 }
-.landing-page-link6 {
+.success-signup-link3 {
   display: contents;
 }
-.landing-page-icon17 {
+.success-signup-icon11 {
   fill: var(--dl-color-gray-white);
   width: 24px;
   height: 24px;
 }
-.landing-page-link7 {
+.success-signup-link4 {
   display: contents;
 }
-.landing-page-icon19 {
+.success-signup-icon13 {
   fill: var(--dl-color-gray-white);
   width: 24px;
   height: 24px;
 }
-.landing-page-link8 {
+.success-signup-link5 {
   display: contents;
 }
-.landing-page-icon21 {
+.success-signup-icon15 {
   fill: var(--dl-color-gray-white);
   width: 24px;
   height: 24px;
 }
 @media(max-width: 1200px) {
-  .landing-page-hero {
-    height: 650px;
+  .success-signup-text07 {
+    color: var(--dl-color-gray-white);
+    font-size: 3rem;
   }
-  .landing-page-learn-more {
-    border-radius: 10px;
+  .success-signup-text12 {
+    color: var(--dl-color-gray-white);
   }
-  .landing-page-mobile-footer {
-    display: none;
-  }
-  .landing-page-menu {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-  }
-  .landing-page-logo2 {
-    margin-left: var(--dl-space-space-tripleunit);
-  }
-  .landing-page-follow-container1 {
-    margin-right: var(--dl-space-space-tripleunit);
+  .success-signup-button {
+    color: var(--dl-color-gray-white);
+    text-decoration: none;
+    background-color: var(--dl-color-primary-100);
   }
 }
 @media(max-width: 991px) {
-  .landing-page-top-container {
-    height: 1000px;
-  }
-  .landing-page-navbar {
+  .success-signup-navbar {
     width: 100%;
   }
-  .landing-page-hero {
+  .success-signup-hero {
     padding-left: var(--dl-space-space-tripleunit);
     padding-right: var(--dl-space-space-tripleunit);
   }
-  .landing-page-logo2 {
-    margin-left: 2.5em;
-    margin-right: 0px;
-  }
-  .landing-page-follow-container1 {
-    margin-left: 3.2em;
-    margin-right: var(--dl-space-space-quadruple);
-  }
 }
 @media(max-width: 767px) {
-  .landing-page-top-container {
-    height: 911px;
-  }
-  .landing-page-right-side {
+  .success-signup-right-side {
     display: none;
   }
-  .landing-page-burger-menu {
+  .success-signup-burger-menu {
     display: flex;
   }
-  .landing-page-hero {
-    height: 100%;
+  .success-signup-hero {
     justify-content: center;
   }
-  .landing-page-banner {
+  .success-signup-banner {
     padding-left: 32px;
     padding-right: 32px;
   }
-  .landing-page-text11 {
+  .success-signup-text12 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .landing-page-mobile-footer {
-    display: none;
-  }
-  .landing-page-links-container2 {
-    margin-top: var(--dl-space-space-tripleunit);
-    margin-bottom: var(--dl-space-space-tripleunit);
-    justify-content: space-between;
-  }
-  .landing-page-text16 {
-    font-size: 12px;
-  }
-  .landing-page-desktop-footer {
-    width: 100%;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .landing-page-menu {
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
-    align-items: center;
+  .success-signup-menu {
     flex-direction: column;
-    justify-content: center;
   }
-  .landing-page-logo2 {
-    display: none;
-  }
-  .landing-page-links-container3 {
+  .success-signup-links-container2 {
     margin-top: var(--dl-space-space-tripleunit);
     margin-bottom: var(--dl-space-space-tripleunit);
     justify-content: space-between;
-  }
-  .landing-page-follow-container1 {
-    margin-right: var(--dl-space-space-halfunit);
   }
 }
 @media(max-width: 479px) {
-  .landing-page-top-container {
-    height: 774px;
+  .success-signup-top-container {
+    height: 879px;
   }
-  .landing-page-hero {
-    height: 638px;
-    padding: var(--dl-space-space-doubleunit);
-  }
-  .landing-page-banner {
-    height: 547px;
-    padding-top: var(--dl-space-space-unit);
+  .success-signup-banner {
+    padding-top: 32px;
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
+    padding-bottom: 32px;
   }
-  .landing-page-text07 {
-    height: 316px;
-    font-size: 3rem;
-  }
-  .landing-page-text11 {
-    color: var(--dl-color-gray-white);
-    width: 16em;
-    font-size: 1.1em;
-    text-align: center;
-  }
-  .landing-page-text12 {
-    font-size: 1em;
-  }
-  .landing-page-text15 {
-    font-size: 0.9em;
-  }
-  .landing-page-btn-group {
+  .success-signup-btn-group {
     flex-direction: column;
   }
-  .landing-page-learn-more {
-    width: 171px;
+  .success-signup-button {
     margin-top: var(--dl-space-space-unit);
     margin-left: 0px;
-    border-radius: 10px;
   }
-  .landing-page-footer {
-    height: 114px;
-  }
-  .landing-page-mobile-footer {
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-  }
-  .landing-page-icons-container1 {
-    gap: var(--dl-space-space-unit);
-    width: auto;
-    height: var(--dl-size-size-doubleunit);
-    align-self: center;
-    margin-top: var(--dl-space-space-unit);
-    align-items: center;
-    justify-content: center;
-  }
-  .landing-page-links-container2 {
-    gap: var(--dl-space-space-quadruple);
-    width: 100%;
-    height: 100%;
-    align-self: center;
-    margin-top: 0px;
-    align-items: center;
-    margin-bottom: 0px;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .landing-page-text16 {
-    font-size: 15px;
-    text-align: left;
-    margin-left: var(--dl-space-space-unit);
-  }
-  .landing-page-text17 {
-    font-size: 12px;
-    margin-left: var(--dl-space-space-unit);
-  }
-  .landing-page-desktop-footer {
-    display: none;
-  }
-  .landing-page-links-container3 {
+  .success-signup-links-container2 {
     margin-top: var(--dl-space-space-doubleunit);
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .landing-page-follow-container1 {
+  .success-signup-follow-container1 {
     margin-left: 0px;
   }
 }

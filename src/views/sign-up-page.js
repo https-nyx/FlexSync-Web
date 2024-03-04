@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import { Helmet } from "react-helmet";
 
@@ -7,6 +7,7 @@ import SolidButton from "../components/solid-button";
 import "./sign-up-page.css";
 
 const SignUpPage = (props) => {
+  const history = useHistory();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [age, setAge] = useState("");
@@ -47,6 +48,9 @@ const SignUpPage = (props) => {
         setAge("");
         setGender(0);
         console.log("New account created");
+
+        // Redirect to the dashboard
+        history.push("/success-signup");
       }
     } catch (error) {
       setError(error.message);
@@ -169,62 +173,61 @@ const SignUpPage = (props) => {
         <div className="sign-up-page-container1">
           <div className="sign-up-page-component-spacer">
             <img
-              src="https://images.unsplash.com/photo-1550345332-09e3ac987658?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDMzfHxneW0lMjBicm98ZW58MHx8fHwxNzA5MjcwNTEyfDA&amp;ixlib=rb-4.0.3&amp;w=500"
               alt="image"
+              src="https://images.unsplash.com/photo-1550345332-09e3ac987658?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDMzfHxneW0lMjBicm98ZW58MHx8fHwxNzA5MjcwNTEyfDA&amp;ixlib=rb-4.0.3&amp;w=500"
               className="sign-up-page-image"
             />
             <div className="sign-up-page-form">
               <h1 className="sign-up-page-text07">Create an Account</h1>
-              <div>
-                <form>
-                  <input
-                    type="text"
-                    placeholder="Username"
-                    className="sign-up-page-username input"
-                    onChange={(e) => setUsername(e.target.value)}
-                    value={username}
-                  />
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    className="sign-up-page-password input"
-                    onChange={(e) => setPassword(e.target.value)}
-                    value={password}
-                  />
-                  <select
-                    className="sign-up-page-age"
-                    onChange={(e) => setAge(e.target.value)}
-                    value={age}
-                  >
-                    <option value="">Age</option>
-                    <option value="13-19">13-19</option>
-                    <option value="20-29">20-29</option>
-                    <option value="30-64">30-64</option>
-                    <option value="65+">65+</option>
-                  </select>
-                  <select
-                    className="sign-up-page-gender"
-                    onChange={(e) => setGender(e.target.value)}
-                    value={gender}
-                  >
-                    <option value={0}>Gender</option>
-                    <option value={1}>Male</option>
-                    <option value={2}>Female</option>
-                  </select>
-                  <SolidButton
-                    button="Sign Up"
-                    rootClassName="solid-button-root-class-name"
-                    onClick={handleSubmit}
-                  ></SolidButton>
-                </form>
+              <input
+                type="text"
+                placeholder="Username"
+                className="sign-up-page-username input"
+                onChange={(e) => setUsername(e.target.value)}
+                value={username}
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                className="sign-up-page-password input"
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+              />
+              <div className="sign-up-page-dropdowns">
+                <select
+                  className="sign-up-page-age"
+                  onChange={(e) => setAge(e.target.value)}
+                  value={age}
+                >
+                  <option>Age</option>
+                  <option value="13-19">13-19</option>
+                  <option value="20-29">20-29</option>
+                  <option value="30-64">30-64</option>
+                  <option value="65+">65+</option>
+                </select>
+                <select
+                  className="sign-up-page-gender"
+                  onChange={(e) => setGender(e.target.value)}
+                  value={gender}
+                >
+                  <option>Gender</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
               </div>
-
+              <SolidButton
+                button="Sign Up"
+                rootClassName="solid-button-root-class-name3"
+                onClick={handleSubmit}
+              ></SolidButton>
               <div className="sign-up-page-login-reroute">
                 <span className="sign-up-page-text08">
                   <span>Already have an account?</span>
                   <br></br>
                 </span>
-                <span className="sign-up-page-text11"> Login</span>
+                <Link to="/admin-login-page" className="sign-up-page-navlink">
+                   Login
+                </Link>
               </div>
             </div>
           </div>
@@ -237,7 +240,7 @@ const SignUpPage = (props) => {
             <span>© 2024 Early Access, All Rights Reserved </span>
           </div>
           <div className="sign-up-page-follow-container1">
-            <span className="sign-up-page-text13">
+            <span className="sign-up-page-text12">
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
