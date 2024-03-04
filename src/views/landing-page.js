@@ -15,10 +15,12 @@ const LandingPage = (props) => {
       </Helmet>
       <div className="landing-page-top-container">
         <nav data-role="Header" className="landing-page-navbar">
-          <h1 className="landing-page-logo">
-            <span>FLEX</span>
-            <span className="landing-page-text01">SYNC</span>
-          </h1>
+          <Link to="/" className="landing-page-navlink">
+            <h1 className="landing-page-logo">
+              <span>FLEX</span>
+              <span className="landing-page-text01">SYNC</span>
+            </h1>
+          </Link>
           <div className="landing-page-right-side">
             <div className="landing-page-links-container">
               <span className="landing-page-home">Home</span>
@@ -30,7 +32,7 @@ const LandingPage = (props) => {
               </Link>
               <span className="landing-page-contact">Contact</span>
             </div>
-            <Link to="/sign-up-page" className="landing-page-navlink">
+            <Link to="/sign-up-page" className="landing-page-navlink1">
               <SolidButton
                 button="Get Started"
                 className="landing-page-component"
@@ -144,14 +146,12 @@ const LandingPage = (props) => {
                 - Arnold Schwarzenegger
               </span>
             </span>
-            <div className="landing-page-btn-group">
-              <Link
-                to="/features-page"
-                className="landing-page-learn-more button"
-              >
-                Learn More
-              </Link>
-            </div>
+            <Link
+              to="/features-page"
+              className="landing-page-learn-more button"
+            >
+              Learn More
+            </Link>
           </div>
         </div>
       </div>
