@@ -6,11 +6,11 @@
   color: var(--dl-color-gray-white);
   width: auto;
   border: none;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-doubleunit);
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-tripleunit);
   border-radius: 50px;
-  padding-right: var(--dl-space-space-doubleunit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-tripleunit);
+  padding-bottom: var(--dl-space-space-unit);
   background-color: var(--dl-color-primary-100);
 }
 .solid-button-root-class-name {
@@ -35,12 +35,20 @@
   margin-top: -10px;
   margin-bottom: -15px;
 }
-.solid-button-root-class-name3 {
-  width: auto;
-  height: auto;
-  position: 0px;
-  align-self: center;
-  margin-bottom: -15px;
+.solid-button-root-class-name4 {
+  height: 2.5em;
+  margin-right: var(--dl-space-space-unit);
+}
+.solid-button-root-class-name5 {
+  margin-right: var(--dl-space-space-unit);
+}
+.solid-button-root-class-name6 {
+  height: 2.5em;
+  margin-right: var(--dl-space-space-unit);
+}
+.solid-button-root-class-name7 {
+  height: 2.5em;
+  margin-right: var(--dl-space-space-unit);
 }
 @media(max-width: 1200px) {
   .solid-button-root-class-name1 {
