@@ -13,8 +13,8 @@ import PreviewPage from "./views/preview-page";
 import FeaturesPage from "./views/features-page";
 import SuccessSignup from "./views/success-signup";
 import SignUpPage from "./views/sign-up-page";
-import LandingPage from "./views/landing-page";
 import AdminPage from "./views/admin-page";
+import LandingPage from "./views/landing-page";
 import NotFound from "./views/not-found";
 
 const App = () => {
@@ -26,8 +26,8 @@ const App = () => {
         <Route component={FeaturesPage} exact path="/features-page" />
         <Route component={SuccessSignup} exact path="/success-signup" />
         <Route component={SignUpPage} exact path="/sign-up-page" />
-        <Route component={LandingPage} exact path="/" />
         <Route component={AdminPage} exact path="/admin-page" />
+        <Route component={LandingPage} exact path="/" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
