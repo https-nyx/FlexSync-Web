@@ -5,7 +5,7 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(180deg, rgb(0, 0, 0) 4.00%,rgba(66, 57, 59, 0.97) 50.00%);
+  background-image: linear-gradient(180deg, rgb(0, 0, 0) 4.00%,rgba(66, 57, 59, 0.97) 46.00%);
 }
 .sign-up-page-top-container {
   width: 100%;
@@ -271,7 +271,7 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-tripleunit);
 }
-.sign-up-page-text10 {
+.sign-up-page-heading {
   color: var(--dl-color-gray-white);
   width: 100%;
   font-size: 2.7rem;
@@ -337,7 +337,7 @@
   color: var(--dl-color-gray-white);
   background-color: #eb4141;
 }
-.sign-up-page-text11 {
+.sign-up-page-text12 {
   width: 100%;
   text-align: center;
 }
@@ -398,7 +398,7 @@
 .sign-up-page-desktop-footer {
   flex: 0 0 auto;
   width: 100%;
-  height: 100%;
+  height: 100px;
   display: flex;
   align-items: flex-start;
 }
@@ -414,7 +414,7 @@
 .sign-up-page-logo2 {
   margin-left: var(--dl-space-space-tripleunit);
 }
-.sign-up-page-text18 {
+.sign-up-page-text19 {
   color: var(--dl-color-primary-100);
 }
 .sign-up-page-links-container3 {
@@ -431,7 +431,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.sign-up-page-text20 {
+.sign-up-page-text21 {
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .sign-up-page-icons-container2 {
@@ -481,7 +481,7 @@
   .sign-up-page-form {
     width: 50%;
   }
-  .sign-up-page-text11 {
+  .sign-up-page-text12 {
     height: 100%;
   }
   .sign-up-page-desktop-footer {
@@ -549,7 +549,7 @@
     margin-bottom: var(--dl-space-space-tripleunit);
     justify-content: space-between;
   }
-  .sign-up-page-text14 {
+  .sign-up-page-text15 {
     font-size: 12px;
   }
   .sign-up-page-desktop-footer {
@@ -579,7 +579,13 @@
   }
 }
 @media(max-width: 479px) {
+  .sign-up-page-top-container {
+    width: 375px;
+  }
   .sign-up-page-navbar {
+    width: 375px;
+    padding: 0px;
+    margin-top: var(--dl-space-space-doubleunit);
     margin-bottom: 0px;
   }
   .sign-up-page-logo {
@@ -615,9 +621,47 @@
   .sign-up-page-burger-menu1 {
     display: none;
   }
+  .sign-up-page-container1 {
+    width: 375px;
+    height: 100%;
+  }
+  .sign-up-page-component-spacer {
+    height: 619px;
+    border-width: 0px;
+  }
+  .sign-up-page-image {
+    display: none;
+  }
+  .sign-up-page-form {
+    width: 100%;
+    height: 613px;
+    padding: var(--dl-space-space-doubleunit);
+    position: relative;
+  }
+  .sign-up-page-heading {
+    color: var(--dl-color-gray-white);
+    width: 100%;
+    font-size: 2em;
+    align-self: center;
+  }
+  .sign-up-page-username {
+    height: 4rem;
+  }
+  .sign-up-page-password {
+    height: 4rem;
+  }
+  .sign-up-page-dropdowns {
+    height: 4rem;
+  }
+  .sign-up-page-age {
+    height: 100%;
+  }
+  .sign-up-page-gender {
+    height: 100%;
+  }
   .sign-up-page-get-started1 {
     color: var(--dl-color-gray-white);
-    width: 236px;
+    width: 80%;
     height: 4em;
     font-size: 1em;
     margin-top: 0px;
@@ -663,12 +707,12 @@
     flex-direction: column;
     justify-content: center;
   }
-  .sign-up-page-text14 {
+  .sign-up-page-text15 {
     font-size: 15px;
     text-align: left;
     margin-left: var(--dl-space-space-unit);
   }
-  .sign-up-page-text15 {
+  .sign-up-page-text16 {
     font-size: 12px;
     margin-left: var(--dl-space-space-unit);
   }

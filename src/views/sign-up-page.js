@@ -135,7 +135,10 @@ const SignUpPage = (props) => {
               className="sign-up-page-image"
             />
             <div className="sign-up-page-form">
-              <h1 className="sign-up-page-text10">Create an Account</h1>
+              <h1 className="sign-up-page-heading">
+                <span>Create an Account</span>
+                <br></br>
+              </h1>
               <input
                 type="text"
                 placeholder="Username"
@@ -164,7 +167,7 @@ const SignUpPage = (props) => {
                 type="button"
                 className="sign-up-page-get-started1 button"
               >
-                <span className="sign-up-page-text11">
+                <span className="sign-up-page-text12">
                   <span>Sign Up</span>
                   <br></br>
                 </span>
@@ -217,8 +220,8 @@ const SignUpPage = (props) => {
             </a>
           </div>
           <div className="sign-up-page-links-container2">
-            <span className="sign-up-page-text14">
-              <span className="sign-up-page-text15">
+            <span className="sign-up-page-text15">
+              <span className="sign-up-page-text16">
                 © 2024 Early Access, All Rights Reserved 
               </span>
               <br></br>
@@ -229,13 +232,13 @@ const SignUpPage = (props) => {
           <div className="sign-up-page-menu">
             <h1 className="sign-up-page-logo2">
               <span>Flex</span>
-              <span className="sign-up-page-text18">Sync</span>
+              <span className="sign-up-page-text19">Sync</span>
             </h1>
             <div className="sign-up-page-links-container3">
               <span>© 2024 Early Access, All Rights Reserved </span>
             </div>
             <div className="sign-up-page-follow-container1">
-              <span className="sign-up-page-text20">
+              <span className="sign-up-page-text21">
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
