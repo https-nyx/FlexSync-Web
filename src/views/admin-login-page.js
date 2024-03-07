@@ -1,57 +1,12 @@
-import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet'
 
-import SolidButton from "../components/solid-button";
-import "./admin-login-page.css";
+import SolidButton from '../components/solid-button'
+import './admin-login-page.css'
 
 const AdminLoginPage = (props) => {
-  const history = useHistory();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState(null);
-
-  const url = "https://flexsync-api.onrender.com/api/auth/login";
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const account = {
-      username,
-      password,
-    };
-
-    try {
-      const response = await fetch(url, {
-        method: "POST",
-        body: JSON.stringify(account),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-
-      if (!response.ok) {
-        const requestData = await response.json();
-        setError(requestData.error);
-        console.error(
-          "Error occurred during form submission:",
-          requestData.error
-        );
-      } else {
-        setUsername("");
-        setPassword("");
-        console.log("Logged in as admin.");
-
-        // Redirect to the dashboard
-        history.push("/admin-page");
-      }
-    } catch (error) {
-      setError(error.message);
-      console.error("Error occurred during form submission:", error.message);
-    }
-  };
-
   return (
     <div className="admin-login-page-container">
       <Helmet>
@@ -122,7 +77,7 @@ const AdminLoginPage = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: " ",
+                    __html: ' ',
                   }}
                 />
               </span>
@@ -183,20 +138,15 @@ const AdminLoginPage = (props) => {
                 type="text"
                 placeholder="Username"
                 className="admin-login-page-username input"
-                onChange={(e) => setUsername(e.target.value)}
-                value={username}
               />
               <input
                 type="password"
                 placeholder="Password"
                 className="admin-login-page-password input"
-                onChange={(e) => setPassword(e.target.value)}
-                value={password}
               />
               <SolidButton
                 button="Login"
                 rootClassName="solid-button-root-class-name1"
-                onClick={handleSubmit}
               ></SolidButton>
               <div className="admin-login-page-login-reroute">
                 <span className="admin-login-page-text08">
@@ -222,7 +172,7 @@ const AdminLoginPage = (props) => {
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
-                  __html: " ",
+                  __html: ' ',
                 }}
               />
             </span>
@@ -271,7 +221,7 @@ const AdminLoginPage = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AdminLoginPage;
+export default AdminLoginPage

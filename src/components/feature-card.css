@@ -39,6 +39,11 @@
 
 
 
+@media(max-width: 1600px) {
+  .feature-card-feature-card {
+    padding: var(--dl-space-space-doubleunit);
+  }
+}
 @media(max-width: 767px) {
   .feature-card-feature-card {
     flex-direction: row;

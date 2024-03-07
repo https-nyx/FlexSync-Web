@@ -145,28 +145,28 @@ const FeaturesPage = (props) => {
             <br className="features-page-text14"></br>
             <br className="features-page-text15"></br>
           </h1>
-          <div className="features-page-container1">
-            <FeatureCard
-              title="Workout Guide"
-              description="Our app features a comprehensive workout guide designed to help you achieve your fitness goals."
-              rootClassName="rootClassName"
-            ></FeatureCard>
-            <FeatureCard
-              title="Diet Guide"
-              description="Our app includes a comprehensive diet guide feature to help you achieve your health and fitness goals."
-              rootClassName="rootClassName2"
-            ></FeatureCard>
-            <FeatureCard
-              title="Custom Workout"
-              description="Our app offers a custom workout feature, allowing users to tailor their fitness journey to their unique needs and goals."
-              rootClassName="rootClassName3"
-            ></FeatureCard>
-            <FeatureCard
-              title="Custom Meal Plan"
-              description="Our app provides a custom meal plan feature, tailored to your needs, for achieving your health and fitness goals."
-              rootClassName="rootClassName1"
-            ></FeatureCard>
-          </div>
+        </div>
+        <div className="features-page-container1">
+          <FeatureCard
+            title="Workout Guide"
+            description="Our app features a comprehensive workout guide designed to help you achieve your fitness goals."
+            rootClassName="rootClassName"
+          ></FeatureCard>
+          <FeatureCard
+            title="Diet Guide"
+            description="Our app includes a comprehensive diet guide feature to help you achieve your health and fitness goals."
+            rootClassName="rootClassName2"
+          ></FeatureCard>
+          <FeatureCard
+            title="Custom Workout"
+            description="Our app offers a custom workout feature, allowing users to tailor their fitness journey to their unique needs and goals."
+            rootClassName="rootClassName3"
+          ></FeatureCard>
+          <FeatureCard
+            title="Custom Meal Plan"
+            description="Our app provides a custom meal plan feature, tailored to your needs, for achieving your health and fitness goals."
+            rootClassName="rootClassName1"
+          ></FeatureCard>
         </div>
       </div>
       <div id="contact" className="features-page-footer">

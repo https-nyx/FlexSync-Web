@@ -41,13 +41,16 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.admin-page-home {
+.admin-page-titie {
   color: var(--dl-color-gray-white);
   transition: 0.3s;
   margin-right: var(--dl-space-space-doubleunit);
+  text-decoration: none;
 }
-.admin-page-home:hover {
+.admin-page-titie:hover {
+  color: var(--dl-color-primary-100);
   cursor: pointer;
+  transform: scale(1.3);
 }
 .admin-page-features {
   color: var(--dl-color-gray-white);
@@ -62,7 +65,9 @@
   animation-timing-function: ease;
 }
 .admin-page-features:hover {
+  color: var(--dl-color-primary-100);
   cursor: pointer;
+  transform: scale(1.3);
 }
 .admin-page-preview {
   color: var(--dl-color-gray-white);
@@ -71,7 +76,9 @@
   text-decoration: none;
 }
 .admin-page-preview:hover {
+  color: var(--dl-color-primary-100);
   cursor: pointer;
+  transform: scale(1.3);
 }
 .admin-page-contact {
   color: var(--dl-color-gray-white);
@@ -80,7 +87,9 @@
   text-decoration: none;
 }
 .admin-page-contact:hover {
+  color: var(--dl-color-primary-100);
   cursor: pointer;
+  transform: scale(1.3);
 }
 .admin-page-component {
   text-decoration: none;
@@ -228,6 +237,7 @@
 }
 .admin-page-blog-post-card:hover {
   transform: scale(1.02);
+  box-shadow: inherit;
 }
 .admin-page-image {
   width: 100%;
@@ -342,7 +352,7 @@
   justify-content: center;
   background-color: var(--dl-color-gray-black);
 }
-.admin-page-menu {
+.admin-page-within-footer {
   width: 100%;
   display: flex;
   max-width: 1000px;
@@ -400,9 +410,23 @@
 @media(max-width: 1200px) {
   .admin-page-top-container {
     height: 695px;
+    position: relative;
+  }
+  .admin-page-hero {
+    top: 120px;
+    left: 81px;
+    height: 581px;
+    position: absolute;
+    padding-top: var(--dl-space-space-quadruple);
+    padding-bottom: var(--dl-space-space-quadruple);
   }
   .admin-page-admin-data {
-    height: 468px;
+    width: 976px;
+    height: 502px;
+  }
+  .admin-page-blog-post-card {
+    height: 491px;
+    align-self: flex-start;
   }
   .admin-page-text07 {
     color: var(--dl-color-gray-white);
@@ -412,6 +436,9 @@
   .admin-page-text08 {
     color: var(--dl-color-gray-white);
   }
+  .admin-page-blog-post-card1 {
+    height: 488px;
+  }
   .admin-page-text09 {
     color: var(--dl-color-gray-white);
     font-size: 1.5rem;
@@ -420,6 +447,9 @@
   .admin-page-text12 {
     color: var(--dl-color-gray-white);
   }
+  .admin-page-blog-post-card2 {
+    height: 487px;
+  }
   .admin-page-text13 {
     color: var(--dl-color-gray-white);
     font-size: 1.5rem;
@@ -427,6 +457,12 @@
   }
   .admin-page-text16 {
     color: var(--dl-color-gray-white);
+  }
+  .admin-page-footer {
+    height: 104px;
+    align-self: center;
+    padding-top: 0px;
+    flex-direction: column;
   }
 }
 @media(max-width: 991px) {
@@ -457,7 +493,7 @@
   .admin-page-hero {
     justify-content: center;
   }
-  .admin-page-menu {
+  .admin-page-within-footer {
     flex-direction: column;
   }
   .admin-page-links-container2 {

@@ -1,79 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet'
 
-import SolidButton from "../components/solid-button";
-import "./admin-page.css";
+import SolidButton from '../components/solid-button'
+import './admin-page.css'
 
 const AdminPage = (props) => {
-  const [count, setCount] = useState(0);
-  const [menCount, setMenCount] = useState(0);
-  const [womenCount, setWomenCount] = useState(0);
-  const [error, setError] = useState(null);
-
-  const menUrl = "https://flexsync-api.onrender.com/api/account/men";
-  const womenUrl = "https://flexsync-api.onrender.com/api/account/women";
-
-  const headers = {
-    "Content-Type": "application/json",
-  };
-
-  const handleMenSubmit = async (e) => {
-    try {
-      const response = await fetch(menUrl, {
-        method: "GET",
-        headers,
-      });
-
-      const requestData = await response.json();
-
-      if (!response.ok) {
-        setError(requestData.error);
-        console.error(
-          "Error occurred during form submission:",
-          requestData.error
-        );
-      } else {
-        setMenCount(requestData.count);
-        console.log("Fetched data successfully!");
-      }
-    } catch (error) {
-      setError(error.message);
-      console.error("Error occurred during form submission:", error.message);
-    }
-  };
-
-  const handleWomenSubmit = async (e) => {
-    try {
-      const response = await fetch(womenUrl, {
-        method: "GET",
-        headers,
-      });
-
-      const requestData = await response.json();
-
-      if (!response.ok) {
-        setError(requestData.error);
-        console.error(
-          "Error occurred during form submission:",
-          requestData.error
-        );
-      } else {
-        setWomenCount(requestData.count);
-        console.log("Fetched data successfully!");
-      }
-    } catch (error) {
-      setError(error.message);
-      console.error("Error occurred during form submission:", error.message);
-    }
-  };
-
-  useEffect(() => {
-    handleMenSubmit();
-    handleWomenSubmit();
-  }, []);
-
   return (
     <div className="admin-page-container">
       <Helmet>
@@ -88,7 +21,9 @@ const AdminPage = (props) => {
           </h1>
           <div className="admin-page-right-side">
             <div className="admin-page-links-container">
-              <span className="admin-page-home">Home</span>
+              <Link to="/" className="admin-page-titie">
+                Home
+              </Link>
               <Link to="/features-page" className="admin-page-features">
                 Features
               </Link>
@@ -98,7 +33,7 @@ const AdminPage = (props) => {
               <span className="admin-page-contact">Contact</span>
             </div>
             <SolidButton
-              button="Log Out"
+              button="Get Started"
               className="admin-page-component"
             ></SolidButton>
           </div>
@@ -137,7 +72,7 @@ const AdminPage = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: " ",
+                    __html: ' ',
                   }}
                 />
               </span>
@@ -195,7 +130,7 @@ const AdminPage = (props) => {
               />
               <div className="admin-page-container1">
                 <span className="admin-page-text07">All Accounts</span>
-                <span className="admin-page-text08">Count: {count}</span>
+                <span className="admin-page-text08">Count: </span>
               </div>
             </div>
             <div className="admin-page-blog-post-card1">
@@ -204,12 +139,12 @@ const AdminPage = (props) => {
                 src="https://images.unsplash.com/photo-1580491934424-f4d543ccbf05?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEwfHxhYnN8ZW58MHx8fHwxNzA5MjI2NDQxfDA&amp;ixlib=rb-4.0.3&amp;w=1000"
                 className="admin-page-image1"
               />
-              <div className="admin-page-container2" onClick={handleMenSubmit}>
+              <div className="admin-page-container2">
                 <span className="admin-page-text09">
                   <span>Men Accounts</span>
                   <br></br>
                 </span>
-                <span className="admin-page-text12">Count: {menCount}</span>
+                <span className="admin-page-text12">Count: </span>
               </div>
             </div>
             <div className="admin-page-blog-post-card2">
@@ -218,22 +153,19 @@ const AdminPage = (props) => {
                 src="https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fGxlZyUyMHdvcmtvdXR8ZW58MHx8fHwxNzA5MjI2NTA4fDA&amp;ixlib=rb-4.0.3&amp;w=1000"
                 className="admin-page-image2"
               />
-              <div
-                className="admin-page-container3"
-                onClick={handleWomenSubmit}
-              >
+              <div className="admin-page-container3">
                 <span className="admin-page-text13">
                   <span>Women Accounts</span>
                   <br></br>
                 </span>
-                <span className="admin-page-text16">Count: {womenCount}</span>
+                <span className="admin-page-text16">Count: </span>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div id="contact" className="admin-page-footer">
-        <div className="admin-page-menu">
+        <div className="admin-page-within-footer">
           <h1>FlexSync</h1>
           <div className="admin-page-links-container2">
             <span>© 2024 Early Access, All Rights Reserved </span>
@@ -243,7 +175,7 @@ const AdminPage = (props) => {
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
-                  __html: " ",
+                  __html: ' ',
                 }}
               />
             </span>
@@ -292,7 +224,7 @@ const AdminPage = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AdminPage;
+export default AdminPage

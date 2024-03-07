@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet'
 
-import SolidButton from "../components/solid-button";
-import "./success-signup.css";
+import SolidButton from '../components/solid-button'
+import './success-signup.css'
 
 const SuccessSignup = (props) => {
   return (
@@ -76,7 +76,7 @@ const SuccessSignup = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: " ",
+                    __html: ' ',
                   }}
                 />
               </span>
@@ -136,7 +136,10 @@ const SuccessSignup = (props) => {
               You are now able to log in to the mobile application.
             </span>
             <div className="success-signup-btn-group">
-              <Link to="/" className="success-signup-button button">
+              <Link
+                to="/features-page"
+                className="success-signup-button button"
+              >
                 Go back to Home Page
               </Link>
             </div>
@@ -154,7 +157,7 @@ const SuccessSignup = (props) => {
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
-                  __html: " ",
+                  __html: ' ',
                 }}
               />
             </span>
@@ -203,7 +206,7 @@ const SuccessSignup = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SuccessSignup;
+export default SuccessSignup
