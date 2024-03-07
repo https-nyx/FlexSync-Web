@@ -5,6 +5,7 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+  background-image: linear-gradient(180deg, rgb(0, 0, 0) 4.00%,rgba(66, 57, 59, 0.97) 50.00%);
 }
 .sign-up-page-top-container {
   width: 100%;
@@ -13,7 +14,6 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: var(--dl-space-space-doubleunit);
-  background-color: #312f2f;
 }
 .sign-up-page-navbar {
   width: 100%;
@@ -398,7 +398,7 @@
 .sign-up-page-desktop-footer {
   flex: 0 0 auto;
   width: 100%;
-  height: 100px;
+  height: 100%;
   display: flex;
   align-items: flex-start;
 }
@@ -466,9 +466,13 @@
   height: 24px;
 }
 @media(max-width: 1600px) {
+  .sign-up-page-container {
+    background-image: linear-gradient(180deg, rgb(0, 0, 0) 0.00%,rgba(66, 57, 59, 0.97) 56.00%);
+  }
   .sign-up-page-top-container {
     height: 765px;
     padding-bottom: 0px;
+    background-color: transparent;
   }
   .sign-up-page-container1 {
     width: 1048px;

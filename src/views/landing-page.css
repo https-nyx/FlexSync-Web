@@ -5,6 +5,7 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+  background-image: linear-gradient(180deg, rgb(0, 0, 0) 4.00%,rgba(66, 57, 59, 0.97) 75.00%);
 }
 .landing-page-top-container {
   width: 100%;
@@ -12,7 +13,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #312f2f;
 }
 .landing-page-navbar {
   width: 100%;
@@ -345,7 +345,7 @@
 .landing-page-desktop-footer {
   flex: 0 0 auto;
   width: 100%;
-  height: 100px;
+  height: 100%;
   display: flex;
   align-items: flex-start;
 }
@@ -413,8 +413,12 @@
   height: 24px;
 }
 @media(max-width: 1600px) {
+  .landing-page-container {
+    background-image: linear-gradient(180deg, rgb(0, 0, 0) 0.00%,rgba(66, 57, 59, 0.97) 75.00%);
+  }
   .landing-page-top-container {
-    height: 749px;
+    height: 765px;
+    background-color: transparent;
   }
   .landing-page-desktop-footer {
     height: 100%;
