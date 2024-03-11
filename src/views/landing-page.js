@@ -15,26 +15,19 @@ const LandingPage = (props) => {
       </Helmet>
       <div className="landing-page-top-container">
         <nav data-role="Header" className="landing-page-navbar">
-          <Link to="/" className="landing-page-navlink">
-            <h1 className="landing-page-logo">
-              <span>FLEX</span>
-              <span className="landing-page-text01">SYNC</span>
-            </h1>
-          </Link>
+          <h1 className="landing-page-logo">
+            <span>FLEX</span>
+            <span className="landing-page-text01">SYNC</span>
+          </h1>
           <div className="landing-page-right-side">
             <div className="landing-page-links-container">
-              <Link to="/" className="landing-page-home">
-                Home
-              </Link>
+              <span className="landing-page-home">Home</span>
               <Link to="/features-page" className="landing-page-features">
                 Features
               </Link>
               <Link to="/preview-page" className="landing-page-preview">
                 Preview
               </Link>
-              <a href="#contact" className="landing-page-contact">
-                Contact
-              </a>
               <Link
                 to="/sign-up-page"
                 className="landing-page-get-started button"
@@ -157,7 +150,7 @@ const LandingPage = (props) => {
               to="/sign-up-page"
               className="landing-page-get-started1 button"
             >
-              <span>
+              <span className="landing-page-text19">
                 <span>
                   Get Started -
                   <span
@@ -227,15 +220,13 @@ const LandingPage = (props) => {
         </div>
         <div className="landing-page-desktop-footer">
           <div className="landing-page-menu">
-            <h1 className="landing-page-logo2">
-              <span>Flex</span>
-              <span className="landing-page-text27">Sync</span>
-            </h1>
             <div className="landing-page-links-container3">
-              <span>© 2024 Early Access, All Rights Reserved </span>
+              <span className="landing-page-text26">
+                © 2024 Early Access, All Rights Reserved 
+              </span>
             </div>
             <div className="landing-page-follow-container1">
-              <span className="landing-page-text29">
+              <span className="landing-page-text27">
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{

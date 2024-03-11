@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 import SolidButton from '../components/solid-button'
-import FeatureCard from '../components/feature-card'
 import './features-page.css'
 
 const FeaturesPage = (props) => {
@@ -27,15 +26,10 @@ const FeaturesPage = (props) => {
               <Link to="/" className="features-page-home">
                 Home
               </Link>
-              <Link to="/features-page" className="features-page-features">
-                Features
-              </Link>
+              <span className="features-page-features">Features</span>
               <Link to="/preview-page" className="features-page-preview">
                 Preview
               </Link>
-              <a href="#contact" className="features-page-contact">
-                Contact
-              </a>
               <Link
                 to="/sign-up-page"
                 className="features-page-get-started button"
@@ -145,28 +139,69 @@ const FeaturesPage = (props) => {
             <br className="features-page-text14"></br>
             <br className="features-page-text15"></br>
           </h1>
-        </div>
-        <div className="features-page-container1">
-          <FeatureCard
-            title="Workout Guide"
-            description="Our app features a comprehensive workout guide designed to help you achieve your fitness goals."
-            rootClassName="rootClassName"
-          ></FeatureCard>
-          <FeatureCard
-            title="Diet Guide"
-            description="Our app includes a comprehensive diet guide feature to help you achieve your health and fitness goals."
-            rootClassName="rootClassName2"
-          ></FeatureCard>
-          <FeatureCard
-            title="Custom Workout"
-            description="Our app offers a custom workout feature, allowing users to tailor their fitness journey to their unique needs and goals."
-            rootClassName="rootClassName3"
-          ></FeatureCard>
-          <FeatureCard
-            title="Custom Meal Plan"
-            description="Our app provides a custom meal plan feature, tailored to your needs, for achieving your health and fitness goals."
-            rootClassName="rootClassName1"
-          ></FeatureCard>
+          <div className="features-page-feature-row-1">
+            <div className="features-page-workout-guide">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE2fHx3b3Jrb3V0fGVufDB8fHx8MTcxMDE1OTk4NHww&amp;ixlib=rb-4.0.3&amp;w=1300"
+                className="features-page-image"
+              />
+              <div className="features-page-container1">
+                <h1 className="features-page-text16">Workout Guide</h1>
+                <span className="features-page-text17">
+                  Discover our comprehensive Workout Guide, designed to help you
+                  achieve your fitness goals
+                </span>
+              </div>
+            </div>
+            <div className="features-page-diet-guide">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fGRpZXR8ZW58MHx8fHwxNzEwMTYxMzcxfDA&amp;ixlib=rb-4.0.3&amp;w=1300"
+                className="features-page-image1"
+              />
+              <div className="features-page-container2">
+                <h1 className="features-page-text18">
+                  <span className="features-page-text19">Diet Guide</span>
+                  <br></br>
+                </h1>
+                <span className="features-page-text21">
+                  Our Diet Guide serves as your comprehensive resource for
+                  delving into a vast array of diet types
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="features-page-feature-row-2">
+            <div className="features-page-custom-workout">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fHdvcmtvdXR8ZW58MHx8fHwxNzEwMTU5OTg0fDA&amp;ixlib=rb-4.0.3&amp;w=1300"
+                className="features-page-image2"
+              />
+              <div className="features-page-container3">
+                <h1 className="features-page-text22">Custom Workout</h1>
+                <span className="features-page-text23">
+                  Our Custom Workout feature enables you to design a
+                  personalized exercise routine to suit your lifestyle
+                </span>
+              </div>
+            </div>
+            <div className="features-page-custom-meal-plan">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1547496502-affa22d38842?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIzfHxkaWV0fGVufDB8fHx8MTcxMDE2MTM3MXww&amp;ixlib=rb-4.0.3&amp;w=1300"
+                className="features-page-image3"
+              />
+              <div className="features-page-container4">
+                <h1 className="features-page-text24">Custom Meal Plan</h1>
+                <span className="features-page-text25">
+                  Our Custom Meal Plan feature allows you to craft a
+                  personalized meal plan that suits your current diet
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div id="contact" className="features-page-footer">
@@ -213,8 +248,8 @@ const FeaturesPage = (props) => {
             </a>
           </div>
           <div className="features-page-links-container2">
-            <span className="features-page-text16">
-              <span className="features-page-text17">
+            <span className="features-page-text26">
+              <span className="features-page-text27">
                 © 2024 Early Access, All Rights Reserved 
               </span>
               <br></br>
@@ -223,15 +258,11 @@ const FeaturesPage = (props) => {
         </div>
         <div className="features-page-desktop-footer">
           <div className="features-page-menu">
-            <h1 className="features-page-logo2">
-              <span>Flex</span>
-              <span className="features-page-text20">Sync</span>
-            </h1>
             <div className="features-page-links-container3">
               <span>© 2024 Early Access, All Rights Reserved </span>
             </div>
             <div className="features-page-follow-container1">
-              <span className="features-page-text22">
+              <span className="features-page-text30">
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{

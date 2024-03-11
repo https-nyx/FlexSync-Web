@@ -32,8 +32,12 @@
 .sign-up-page-logo {
   color: var(--dl-color-gray-white);
   font-size: 2.5em;
+  transition: 0.3s;
   margin-left: var(--dl-space-space-unit);
   text-decoration: none;
+}
+.sign-up-page-logo:hover {
+  transform: scale(1.12);
 }
 .sign-up-page-text01 {
   color: var(--dl-color-primary-100);
@@ -58,8 +62,7 @@
   text-decoration: none;
 }
 .sign-up-page-home:hover {
-  color: var(--dl-color-primary-100);
-  cursor: pointer;
+  transform: scale(1.15);
 }
 .sign-up-page-features {
   color: var(--dl-color-gray-white);
@@ -75,8 +78,9 @@
   animation-timing-function: ease;
 }
 .sign-up-page-features:hover {
-  color: var(--dl-color-primary-100);
+  color: #e13a3a;
   cursor: pointer;
+  transform: scale(1.15);
 }
 .sign-up-page-preview {
   color: var(--dl-color-gray-white);
@@ -86,19 +90,9 @@
   text-decoration: none;
 }
 .sign-up-page-preview:hover {
-  color: var(--dl-color-primary-100);
+  color: #e13a3a;
   cursor: pointer;
-}
-.sign-up-page-contact {
-  color: var(--dl-color-gray-white);
-  font-size: 1.3em;
-  transition: 0.3s;
-  margin-right: var(--dl-space-space-doubleunit);
-  text-decoration: none;
-}
-.sign-up-page-contact:hover {
-  color: var(--dl-color-primary-100);
-  cursor: pointer;
+  transform: scale(1.15);
 }
 .sign-up-page-get-started {
   color: var(--dl-color-gray-white);
@@ -236,8 +230,14 @@
   height: 513px;
   display: flex;
   align-items: flex-end;
+  animation-name: fadeIn;
   flex-direction: column;
+  animation-delay: 0s;
   justify-content: flex-start;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
 }
 .sign-up-page-component-spacer {
   gap: 0;
@@ -398,7 +398,7 @@
 .sign-up-page-desktop-footer {
   flex: 0 0 auto;
   width: 100%;
-  height: 100px;
+  height: 100%;
   display: flex;
   align-items: flex-start;
 }
@@ -410,12 +410,6 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-}
-.sign-up-page-logo2 {
-  margin-left: var(--dl-space-space-tripleunit);
-}
-.sign-up-page-text19 {
-  color: var(--dl-color-primary-100);
 }
 .sign-up-page-links-container3 {
   display: flex;
@@ -431,7 +425,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.sign-up-page-text21 {
+.sign-up-page-text19 {
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .sign-up-page-icons-container2 {
@@ -470,22 +464,60 @@
     background-image: linear-gradient(180deg, rgb(0, 0, 0) 0.00%,rgba(66, 57, 59, 0.97) 56.00%);
   }
   .sign-up-page-top-container {
-    height: 765px;
+    height: 692px;
     padding-bottom: 0px;
     background-color: transparent;
   }
+  .sign-up-page-navbar {
+    margin: 0px;
+  }
+  .sign-up-page-logo {
+    font-size: 1.55em;
+  }
+  .sign-up-page-home {
+    color: var(--dl-color-gray-white);
+  }
+  .sign-up-page-features {
+    color: var(--dl-color-gray-white);
+  }
+  .sign-up-page-preview {
+    color: var(--dl-color-gray-white);
+  }
   .sign-up-page-container1 {
-    width: 1048px;
-    margin-top: var(--dl-space-space-unit);
+    width: 85%;
+    height: 493px;
+    margin-top: 2.3em;
+    animation-name: fadeIn;
+    animation-delay: 0s;
+    animation-duration: 300ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+  }
+  .sign-up-page-component-spacer {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    border-style: outset;
+    border-width: 10px;
+  }
+  .sign-up-page-image {
+    width: 790px;
   }
   .sign-up-page-form {
-    width: 50%;
+    width: 554px;
   }
   .sign-up-page-text12 {
     height: 100%;
   }
+  .sign-up-page-footer {
+    height: 76px;
+  }
   .sign-up-page-desktop-footer {
     height: 100%;
+  }
+  .sign-up-page-links-container3 {
+    margin-left: var(--dl-space-space-tripleunit);
   }
 }
 @media(max-width: 1200px) {
@@ -512,23 +544,19 @@
   .sign-up-page-mobile-footer {
     display: none;
   }
+  .sign-up-page-desktop-footer {
+    height: 100%;
+  }
   .sign-up-page-menu {
     width: 100%;
     height: 100%;
     max-width: 100%;
-  }
-  .sign-up-page-logo2 {
-    margin-left: var(--dl-space-space-tripleunit);
   }
   .sign-up-page-follow-container1 {
     margin-right: var(--dl-space-space-tripleunit);
   }
 }
 @media(max-width: 991px) {
-  .sign-up-page-logo2 {
-    margin-left: 2.5em;
-    margin-right: 0px;
-  }
   .sign-up-page-follow-container1 {
     margin-left: 3.2em;
     margin-right: var(--dl-space-space-quadruple);
@@ -566,9 +594,6 @@
     flex-direction: column;
     justify-content: center;
   }
-  .sign-up-page-logo2 {
-    display: none;
-  }
   .sign-up-page-links-container3 {
     margin-top: var(--dl-space-space-tripleunit);
     margin-bottom: var(--dl-space-space-tripleunit);
@@ -583,7 +608,7 @@
     width: 375px;
   }
   .sign-up-page-navbar {
-    width: 375px;
+    height: 100%;
     padding: 0px;
     margin-top: var(--dl-space-space-doubleunit);
     margin-bottom: 0px;
@@ -592,6 +617,7 @@
     color: var(--dl-color-gray-white);
     width: 100%;
     font-size: 3em;
+    margin-top: 0px;
     text-align: center;
     margin-left: 0px;
   }
@@ -636,7 +662,6 @@
     width: 100%;
     height: 613px;
     padding: var(--dl-space-space-doubleunit);
-    position: relative;
   }
   .sign-up-page-heading {
     color: var(--dl-color-gray-white);

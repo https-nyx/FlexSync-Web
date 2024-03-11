@@ -29,12 +29,7 @@ const PreviewPage = (props) => {
               <Link to="/features-page" className="preview-page-features">
                 Features
               </Link>
-              <Link to="/preview-page" className="preview-page-preview">
-                Preview
-              </Link>
-              <a href="#contact" className="preview-page-contact">
-                Contact
-              </a>
+              <span className="preview-page-preview">Preview</span>
               <Link
                 to="/sign-up-page"
                 className="preview-page-get-started button"
@@ -131,7 +126,7 @@ const PreviewPage = (props) => {
         </nav>
         <div className="preview-page-container1">
           <div className="preview-page-workout">
-            <div className="preview-page-blog-post-card">
+            <div className="preview-page-arm-workouts">
               <img
                 alt="image"
                 src="https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fEFybSUyMHdvcmtvdXR8ZW58MHx8fHwxNzA5MzU3Mzg4fDA&amp;ixlib=rb-4.0.3&amp;w=1000"
@@ -146,7 +141,7 @@ const PreviewPage = (props) => {
                 </span>
               </div>
             </div>
-            <div className="preview-page-blog-post-card1">
+            <div className="preview-page-core-workouts">
               <img
                 alt="image"
                 src="https://images.unsplash.com/photo-1580491934424-f4d543ccbf05?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEwfHxhYnN8ZW58MHx8fHwxNzA5MjI2NDQxfDA&amp;ixlib=rb-4.0.3&amp;w=1000"
@@ -155,12 +150,13 @@ const PreviewPage = (props) => {
               <div className="preview-page-container3">
                 <span className="preview-page-text12">Core Workouts</span>
                 <span className="preview-page-text13">
-                  Focuses on strengthening your abdominal muscles, improving
-                  balance, and enhancing your overall stability.
+                  Places emphasis on the development and fortification of your
+                  abdominal muscles, alongside the enhancement of your balance
+                  and stability.
                 </span>
               </div>
             </div>
-            <div className="preview-page-blog-post-card2">
+            <div className="preview-page-leg-workouts">
               <img
                 alt="image"
                 src="https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fGxlZyUyMHdvcmtvdXR8ZW58MHx8fHwxNzA5MjI2NTA4fDA&amp;ixlib=rb-4.0.3&amp;w=1000"
@@ -176,8 +172,8 @@ const PreviewPage = (props) => {
               </div>
             </div>
           </div>
-          <div className="preview-page-workout1">
-            <div className="preview-page-blog-post-card3">
+          <div className="preview-page-diet">
+            <div className="preview-page-pescatarian">
               <img
                 alt="image"
                 src="https://images.unsplash.com/photo-1609842947408-b5ad4dd13628?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDZ8fHBlc2NhdGFyaWFufGVufDB8fHx8MTcwOTIyNjU3OXww&amp;ixlib=rb-4.0.3&amp;w=1000"
@@ -193,7 +189,7 @@ const PreviewPage = (props) => {
                 </span>
               </div>
             </div>
-            <div className="preview-page-blog-post-card4">
+            <div className="preview-page-mediteranean">
               <img
                 alt="image"
                 src="https://images.unsplash.com/photo-1508170754725-6e9a5cfbcabf?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE1fHxtZWRpdGVycmFuZWFuJTIwZGlldHxlbnwwfHx8fDE3MDkyMjY2MzR8MA&amp;ixlib=rb-4.0.3&amp;w=1000"
@@ -208,7 +204,7 @@ const PreviewPage = (props) => {
                 </span>
               </div>
             </div>
-            <div className="preview-page-blog-post-card5">
+            <div className="preview-page-vegetarian">
               <img
                 alt="image"
                 src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHZlZ2V0YXJpYW58ZW58MHx8fHwxNzA5MjI2NjUwfDA&amp;ixlib=rb-4.0.3&amp;w=1000"
@@ -280,15 +276,11 @@ const PreviewPage = (props) => {
         </div>
         <div className="preview-page-desktop-footer">
           <div className="preview-page-menu">
-            <h1 className="preview-page-logo2">
-              <span>Flex</span>
-              <span className="preview-page-text26">Sync</span>
-            </h1>
             <div className="preview-page-links-container3">
               <span>© 2024 Early Access, All Rights Reserved </span>
             </div>
             <div className="preview-page-follow-container1">
-              <span className="preview-page-text28">
+              <span className="preview-page-text26">
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{

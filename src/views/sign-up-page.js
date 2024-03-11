@@ -32,7 +32,6 @@ const SignUpPage = (props) => {
               <Link to="/preview-page" className="sign-up-page-preview">
                 Preview
               </Link>
-              <span className="sign-up-page-contact">Contact</span>
               <Link
                 to="/sign-up-page"
                 className="sign-up-page-get-started button"
@@ -131,7 +130,7 @@ const SignUpPage = (props) => {
           <div className="sign-up-page-component-spacer">
             <img
               alt="image"
-              src="https://images.unsplash.com/photo-1550345332-09e3ac987658?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDMzfHxneW0lMjBicm98ZW58MHx8fHwxNzA5MjcwNTEyfDA&amp;ixlib=rb-4.0.3&amp;w=700"
+              src="https://images.unsplash.com/photo-1550345332-09e3ac987658?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDMzfHxneW0lMjBicm98ZW58MHx8fHwxNzA5MjcwNTEyfDA&amp;ixlib=rb-4.0.3&amp;w=800"
               className="sign-up-page-image"
             />
             <div className="sign-up-page-form">
@@ -230,15 +229,11 @@ const SignUpPage = (props) => {
         </div>
         <div className="sign-up-page-desktop-footer">
           <div className="sign-up-page-menu">
-            <h1 className="sign-up-page-logo2">
-              <span>Flex</span>
-              <span className="sign-up-page-text19">Sync</span>
-            </h1>
             <div className="sign-up-page-links-container3">
               <span>© 2024 Early Access, All Rights Reserved </span>
             </div>
             <div className="sign-up-page-follow-container1">
-              <span className="sign-up-page-text21">
+              <span className="sign-up-page-text19">
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{

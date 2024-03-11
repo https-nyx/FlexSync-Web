@@ -5,7 +5,7 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(180deg, rgb(0, 0, 0) 4.00%,rgba(66, 57, 59, 0.97) 83.00%);
+  background-image: linear-gradient(180deg, rgb(0, 0, 0) 4.00%,rgba(66, 57, 59, 0.97) 89.00%);
 }
 .preview-page-top-container {
   width: 100%;
@@ -22,7 +22,7 @@
   padding: var(--dl-space-space-doubleunit);
   max-width: 100%;
   align-items: center;
-  margin-bottom: var(--dl-space-space-doubleunit);
+  margin-bottom: var(--dl-space-space-unit);
   flex-direction: row;
   justify-content: space-between;
 }
@@ -32,8 +32,12 @@
 .preview-page-logo {
   color: var(--dl-color-gray-white);
   font-size: 2.5em;
+  transition: 0.3s;
   margin-left: var(--dl-space-space-unit);
   text-decoration: none;
+}
+.preview-page-logo:hover {
+  transform: scale(1.12);
 }
 .preview-page-text01 {
   color: var(--dl-color-primary-100);
@@ -58,8 +62,7 @@
   text-decoration: none;
 }
 .preview-page-home:hover {
-  color: var(--dl-color-primary-100);
-  cursor: pointer;
+  transform: scale(1.15);
 }
 .preview-page-features {
   color: var(--dl-color-gray-white);
@@ -75,30 +78,20 @@
   animation-timing-function: ease;
 }
 .preview-page-features:hover {
-  color: var(--dl-color-primary-100);
+  color: #e13a3a;
   cursor: pointer;
+  transform: scale(1.15);
 }
 .preview-page-preview {
-  color: var(--dl-color-gray-white);
+  color: #e13a3a;
   font-size: 1.3em;
   transition: 0.3s;
   margin-right: var(--dl-space-space-doubleunit);
-  text-decoration: none;
 }
 .preview-page-preview:hover {
-  color: var(--dl-color-primary-100);
+  color: #e13a3a;
   cursor: pointer;
-}
-.preview-page-contact {
-  color: var(--dl-color-gray-white);
-  font-size: 1.3em;
-  transition: 0.3s;
-  margin-right: var(--dl-space-space-doubleunit);
-  text-decoration: none;
-}
-.preview-page-contact:hover {
-  color: var(--dl-color-primary-100);
-  cursor: pointer;
+  transform: scale(1.15);
 }
 .preview-page-get-started {
   color: var(--dl-color-gray-white);
@@ -236,7 +229,13 @@
   flex: 0 0 auto;
   display: flex;
   align-items: flex-start;
+  animation-name: fadeIn;
   flex-direction: column;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
 }
 .preview-page-workout {
   gap: var(--dl-space-space-doubleunit);
@@ -245,7 +244,7 @@
   display: flex;
   align-items: flex-start;
 }
-.preview-page-blog-post-card {
+.preview-page-arm-workouts {
   width: 100%;
   height: 100%;
   display: flex;
@@ -258,7 +257,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.preview-page-blog-post-card:hover {
+.preview-page-arm-workouts:hover {
   transform: scale(1.02);
 }
 .preview-page-image {
@@ -284,7 +283,7 @@
   font-weight: 400;
   margin-bottom: 32px;
 }
-.preview-page-blog-post-card1 {
+.preview-page-core-workouts {
   width: 100%;
   height: 100%;
   display: flex;
@@ -297,7 +296,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.preview-page-blog-post-card1:hover {
+.preview-page-core-workouts:hover {
   transform: scale(1.02);
 }
 .preview-page-image1 {
@@ -323,7 +322,7 @@
   font-weight: 400;
   margin-bottom: 32px;
 }
-.preview-page-blog-post-card2 {
+.preview-page-leg-workouts {
   width: 100%;
   height: 100%;
   display: flex;
@@ -336,7 +335,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.preview-page-blog-post-card2:hover {
+.preview-page-leg-workouts:hover {
   transform: scale(1.02);
 }
 .preview-page-image2 {
@@ -362,14 +361,14 @@
   font-weight: 400;
   margin-bottom: 32px;
 }
-.preview-page-workout1 {
+.preview-page-diet {
   gap: var(--dl-space-space-doubleunit);
   width: 1000px;
   height: 444px;
   display: flex;
   align-items: flex-start;
 }
-.preview-page-blog-post-card3 {
+.preview-page-pescatarian {
   width: 100%;
   height: 100%;
   display: flex;
@@ -382,7 +381,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.preview-page-blog-post-card3:hover {
+.preview-page-pescatarian:hover {
   transform: scale(1.02);
 }
 .preview-page-image3 {
@@ -408,7 +407,7 @@
   font-weight: 400;
   margin-bottom: 32px;
 }
-.preview-page-blog-post-card4 {
+.preview-page-mediteranean {
   width: 100%;
   height: 100%;
   display: flex;
@@ -420,7 +419,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.preview-page-blog-post-card4:hover {
+.preview-page-mediteranean:hover {
   transform: scale(1.02);
 }
 .preview-page-image4 {
@@ -446,7 +445,7 @@
   font-weight: 400;
   margin-bottom: 32px;
 }
-.preview-page-blog-post-card5 {
+.preview-page-vegetarian {
   width: 100%;
   height: 100%;
   display: flex;
@@ -458,7 +457,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.preview-page-blog-post-card5:hover {
+.preview-page-vegetarian:hover {
   transform: scale(1.02);
 }
 .preview-page-image5 {
@@ -554,12 +553,6 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.preview-page-logo2 {
-  margin-left: var(--dl-space-space-tripleunit);
-}
-.preview-page-text26 {
-  color: var(--dl-color-primary-100);
-}
 .preview-page-links-container3 {
   display: flex;
   align-items: center;
@@ -574,7 +567,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.preview-page-text28 {
+.preview-page-text26 {
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .preview-page-icons-container2 {
@@ -615,8 +608,69 @@
   .preview-page-top-container {
     background-color: transparent;
   }
+  .preview-page-navbar {
+    margin: 0px;
+  }
+  .preview-page-logo {
+    font-size: 1.55em;
+  }
+  .preview-page-home {
+    color: var(--dl-color-gray-white);
+  }
+  .preview-page-features {
+    color: var(--dl-color-gray-white);
+  }
+  .preview-page-preview {
+    color: #e13a3a;
+  }
+  .preview-page-container1 {
+    height: 962px;
+    margin-top: 1.5em;
+    animation-name: fadeIn;
+    animation-delay: 0s;
+    animation-duration: 300ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+  }
+  .preview-page-workout {
+    margin-top: 0px;
+  }
+  .preview-page-arm-workouts {
+    box-shadow: 0px 5px 10px 3px rgba(192, 171, 171, 0.1);
+  }
+  .preview-page-core-workouts {
+    box-shadow: 0px 5px 10px 3px rgba(192, 171, 171, 0.1);
+  }
+  .preview-page-text12 {
+    color: var(--dl-color-gray-white);
+  }
+  .preview-page-text13 {
+    color: var(--dl-color-gray-900);
+    align-self: flex-start;
+    text-align: left;
+    font-weight: 400;
+  }
+  .preview-page-leg-workouts {
+    box-shadow: 0px 5px 10px 3px rgba(192, 171, 171, 0.1);
+  }
+  .preview-page-pescatarian {
+    box-shadow: 0px 5px 10px 3px rgba(192, 171, 171, 0.1);
+  }
+  .preview-page-mediteranean {
+    box-shadow: 0px 5px 10px 3px rgba(192, 171, 171, 0.1);
+  }
+  .preview-page-vegetarian {
+    box-shadow: 0px 5px 10px 3px rgba(192, 171, 171, 0.1);
+  }
+  .preview-page-footer {
+    height: 76px;
+  }
   .preview-page-desktop-footer {
     height: 100%;
+  }
+  .preview-page-links-container3 {
+    margin-left: var(--dl-space-space-tripleunit);
   }
 }
 @media(max-width: 1200px) {
@@ -626,13 +680,13 @@
   .preview-page-mobile-footer {
     display: none;
   }
+  .preview-page-desktop-footer {
+    height: 100%;
+  }
   .preview-page-menu {
     width: 100%;
     height: 100%;
     max-width: 100%;
-  }
-  .preview-page-logo2 {
-    margin-left: var(--dl-space-space-tripleunit);
   }
   .preview-page-follow-container1 {
     margin-right: var(--dl-space-space-tripleunit);
@@ -656,10 +710,6 @@
   }
   .preview-page-image5 {
     height: 350px;
-  }
-  .preview-page-logo2 {
-    margin-left: 2.5em;
-    margin-right: 0px;
   }
   .preview-page-follow-container1 {
     margin-left: 3.2em;
@@ -698,9 +748,6 @@
     flex-direction: column;
     justify-content: center;
   }
-  .preview-page-logo2 {
-    display: none;
-  }
   .preview-page-links-container3 {
     margin-top: var(--dl-space-space-tripleunit);
     margin-bottom: var(--dl-space-space-tripleunit);
@@ -712,12 +759,16 @@
 }
 @media(max-width: 479px) {
   .preview-page-navbar {
+    height: 100%;
+    padding: 0px;
+    margin-top: var(--dl-space-space-doubleunit);
     margin-bottom: 0px;
   }
   .preview-page-logo {
     color: var(--dl-color-gray-white);
     width: 100%;
     font-size: 3em;
+    margin-top: 0px;
     text-align: center;
     margin-left: 0px;
   }
