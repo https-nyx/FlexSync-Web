@@ -20,13 +20,6 @@
   align-self: center;
   margin-bottom: -15px;
 }
-.solid-button-root-class-name1 {
-  width: auto;
-  height: auto;
-  position: 0px;
-  align-self: center;
-  margin-bottom: -15px;
-}
 .solid-button-root-class-name2 {
   width: auto;
   height: 100%;
@@ -49,9 +42,4 @@
 .solid-button-root-class-name7 {
   height: 2.5em;
   margin-right: var(--dl-space-space-unit);
-}
-@media(max-width: 1200px) {
-  .solid-button-root-class-name1 {
-    margin-bottom: 0px;
-  }
 }

@@ -4,34 +4,31 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 import SolidButton from '../components/solid-button'
-import './landing-page.css'
+import './home.css'
 
-const LandingPage = (props) => {
+const Home = (props) => {
   return (
-    <div className="landing-page-container">
+    <div className="home-container">
       <Helmet>
         <title>FlexSync</title>
         <meta property="og:title" content="FlexSync" />
       </Helmet>
-      <div className="landing-page-top-container">
-        <nav data-role="Header" className="landing-page-navbar">
-          <h1 className="landing-page-logo">
+      <div className="home-top-container">
+        <nav data-role="Header" className="home-navbar">
+          <h1 className="home-logo">
             <span>FLEX</span>
-            <span className="landing-page-text01">SYNC</span>
+            <span className="home-text01">SYNC</span>
           </h1>
-          <div className="landing-page-right-side">
-            <div className="landing-page-links-container">
-              <span className="landing-page-home">Home</span>
-              <Link to="/features-page" className="landing-page-features">
+          <div className="home-right-side">
+            <div className="home-links-container">
+              <span className="home-home">Home</span>
+              <Link to="/features" className="home-features">
                 Features
               </Link>
-              <Link to="/preview-page" className="landing-page-preview">
+              <Link to="/preview" className="home-preview">
                 Preview
               </Link>
-              <Link
-                to="/sign-up-page"
-                className="landing-page-get-started button"
-              >
+              <Link to="/sign-up" className="home-get-started button">
                 <span>
                   <span>Get Started</span>
                   <br></br>
@@ -39,38 +36,35 @@ const LandingPage = (props) => {
               </Link>
             </div>
           </div>
-          <div data-role="BurgerMenu" className="landing-page-burger-menu">
-            <svg viewBox="0 0 1024 1024" className="landing-page-burger-menu1">
+          <div data-role="BurgerMenu" className="home-burger-menu">
+            <svg viewBox="0 0 1024 1024" className="home-burger-menu1">
               <path d="M810.667 725.333h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
               <path d="M810.667 426.667h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
               <path d="M810.667 128h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"></path>
             </svg>
           </div>
-          <div data-role="MobileMenu" className="landing-page-mobile-menu">
-            <div className="landing-page-nav">
-              <div className="landing-page-top">
+          <div data-role="MobileMenu" className="home-mobile-menu">
+            <div className="home-nav">
+              <div className="home-top">
                 <h1>Travel</h1>
-                <div
-                  data-role="CloseMobileMenu"
-                  className="landing-page-close-menu"
-                >
-                  <svg viewBox="0 0 1024 1024" className="landing-page-icon03">
+                <div data-role="CloseMobileMenu" className="home-close-menu">
+                  <svg viewBox="0 0 1024 1024" className="home-icon03">
                     <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                   </svg>
                 </div>
               </div>
-              <div className="landing-page-right-side1">
-                <div className="landing-page-links-container1">
-                  <span className="landing-page-text05">Home</span>
-                  <span className="landing-page-text06">About</span>
-                  <span className="landing-page-text07">Tour Packages</span>
+              <div className="home-right-side1">
+                <div className="home-links-container1">
+                  <span className="home-text05">Home</span>
+                  <span className="home-text06">About</span>
+                  <span className="home-text07">Tour Packages</span>
                   <span>Contact</span>
                 </div>
                 <SolidButton button="Explore places"></SolidButton>
               </div>
             </div>
-            <div className="landing-page-follow-container">
-              <span className="landing-page-text09">
+            <div className="home-follow-container">
+              <span className="home-text09">
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
@@ -78,16 +72,16 @@ const LandingPage = (props) => {
                   }}
                 />
               </span>
-              <div className="landing-page-icons-container">
+              <div className="home-icons-container">
                 <a
                   href="https://instagram.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="landing-page-link"
+                  className="home-link"
                 >
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
-                    className="landing-page-icon05"
+                    className="home-icon05"
                   >
                     <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
                   </svg>
@@ -96,11 +90,11 @@ const LandingPage = (props) => {
                   href="https://facebook.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="landing-page-link1"
+                  className="home-link1"
                 >
                   <svg
                     viewBox="0 0 602.2582857142856 1024"
-                    className="landing-page-icon07"
+                    className="home-icon07"
                   >
                     <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
                   </svg>
@@ -109,11 +103,11 @@ const LandingPage = (props) => {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="landing-page-link2"
+                  className="home-link2"
                 >
                   <svg
                     viewBox="0 0 950.8571428571428 1024"
-                    className="landing-page-icon09"
+                    className="home-icon09"
                   >
                     <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
                   </svg>
@@ -122,14 +116,14 @@ const LandingPage = (props) => {
             </div>
           </div>
         </nav>
-        <div className="landing-page-hero">
-          <div className="landing-page-banner">
-            <h1 className="landing-page-text10">
-              <span className="landing-page-text11">Commit</span>
-              <span className="landing-page-text12"> to be fit</span>
+        <div className="home-hero">
+          <div className="home-banner">
+            <h1 className="home-text10">
+              <span className="home-text11">Commit</span>
+              <span className="home-text12"> to be fit</span>
               <br></br>
-              <span className="landing-page-text14">Build</span>
-              <span className="landing-page-text15">
+              <span className="home-text14">Build</span>
+              <span className="home-text15">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',
@@ -139,18 +133,15 @@ const LandingPage = (props) => {
               <span>a better you</span>
               <br></br>
             </h1>
-            <span className="landing-page-text18">
+            <span className="home-text18">
               Discover a world of fitness tailored to your journey, whether
               you&apos;re just starting or looking to push your limits. FlexSync
               offers personalized workouts, expert guidance, and a supportive
               community to help you achieve your fitness goals. Join us today
               and transform your fitness journey.
             </span>
-            <Link
-              to="/sign-up-page"
-              className="landing-page-get-started1 button"
-            >
-              <span className="landing-page-text19">
+            <Link to="/sign-up" className="home-get-started1 button">
+              <span className="home-text19">
                 <span>
                   Get Started -
                   <span
@@ -159,26 +150,23 @@ const LandingPage = (props) => {
                     }}
                   />
                 </span>
-                <span className="landing-page-text21">i</span>
-                <span className="landing-page-text22">t&apos;s free</span>
+                <span className="home-text21">i</span>
+                <span className="home-text22">t&apos;s free</span>
               </span>
             </Link>
           </div>
         </div>
       </div>
-      <div id="contact" className="landing-page-footer">
-        <div className="landing-page-mobile-footer">
-          <div className="landing-page-icons-container1">
+      <div id="contact" className="home-footer">
+        <div className="home-mobile-footer">
+          <div className="home-icons-container1">
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noreferrer noopener"
-              className="landing-page-link3"
+              className="home-link3"
             >
-              <svg
-                viewBox="0 0 877.7142857142857 1024"
-                className="landing-page-icon11"
-              >
+              <svg viewBox="0 0 877.7142857142857 1024" className="home-icon11">
                 <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
               </svg>
             </a>
@@ -186,12 +174,9 @@ const LandingPage = (props) => {
               href="https://facebook.com"
               target="_blank"
               rel="noreferrer noopener"
-              className="landing-page-link4"
+              className="home-link4"
             >
-              <svg
-                viewBox="0 0 602.2582857142856 1024"
-                className="landing-page-icon13"
-              >
+              <svg viewBox="0 0 602.2582857142856 1024" className="home-icon13">
                 <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
               </svg>
             </a>
@@ -199,34 +184,31 @@ const LandingPage = (props) => {
               href="https://twitter.com"
               target="_blank"
               rel="noreferrer noopener"
-              className="landing-page-link5"
+              className="home-link5"
             >
-              <svg
-                viewBox="0 0 950.8571428571428 1024"
-                className="landing-page-icon15"
-              >
+              <svg viewBox="0 0 950.8571428571428 1024" className="home-icon15">
                 <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
               </svg>
             </a>
           </div>
-          <div className="landing-page-links-container2">
-            <span className="landing-page-text23">
-              <span className="landing-page-text24">
+          <div className="home-links-container2">
+            <span className="home-text23">
+              <span className="home-text24">
                 © 2024 Early Access, All Rights Reserved 
               </span>
               <br></br>
             </span>
           </div>
         </div>
-        <div className="landing-page-desktop-footer">
-          <div className="landing-page-menu">
-            <div className="landing-page-links-container3">
-              <span className="landing-page-text26">
+        <div className="home-desktop-footer">
+          <div className="home-menu">
+            <div className="home-links-container3">
+              <span className="home-text26">
                 © 2024 Early Access, All Rights Reserved 
               </span>
             </div>
-            <div className="landing-page-follow-container1">
-              <span className="landing-page-text27">
+            <div className="home-follow-container1">
+              <span className="home-text27">
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
@@ -234,16 +216,16 @@ const LandingPage = (props) => {
                   }}
                 />
               </span>
-              <div className="landing-page-icons-container2">
+              <div className="home-icons-container2">
                 <a
                   href="https://instagram.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="landing-page-link6"
+                  className="home-link6"
                 >
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
-                    className="landing-page-icon17"
+                    className="home-icon17"
                   >
                     <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
                   </svg>
@@ -252,11 +234,11 @@ const LandingPage = (props) => {
                   href="https://facebook.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="landing-page-link7"
+                  className="home-link7"
                 >
                   <svg
                     viewBox="0 0 602.2582857142856 1024"
-                    className="landing-page-icon19"
+                    className="home-icon19"
                   >
                     <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
                   </svg>
@@ -265,11 +247,11 @@ const LandingPage = (props) => {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="landing-page-link8"
+                  className="home-link8"
                 >
                   <svg
                     viewBox="0 0 950.8571428571428 1024"
-                    className="landing-page-icon21"
+                    className="home-icon21"
                   >
                     <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
                   </svg>
@@ -283,4 +265,4 @@ const LandingPage = (props) => {
   )
 }
 
-export default LandingPage
+export default Home
