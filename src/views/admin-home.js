@@ -36,7 +36,6 @@ const AdminHome = (props) => {
         headers: {
           "Content-Type": "application/json",
         },
-        credentials: "include",
       });
       history.replace("/admin");
     } catch (error) {

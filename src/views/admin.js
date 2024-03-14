@@ -14,7 +14,7 @@ const Admin = (props) => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://flexsync-api.onrender.com/api/auth/login",
+        "http://flexsync-api.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {
@@ -31,8 +31,6 @@ const Admin = (props) => {
           alert("You are already logged in");
           history.push("/admin-home");
         } else if (data.isAdmin === true) {
-          console.log(data.isAdmin);
-          console.log(data);
           history.push("/admin-home");
         } else {
           alert("You are not an admin");
