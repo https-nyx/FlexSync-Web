@@ -1,12 +1,46 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import { Link, useHistory } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
-import { Helmet } from 'react-helmet'
-
-import SolidButton from '../components/solid-button'
-import './admin.css'
+import SolidButton from "../components/solid-button";
+import "./admin.css";
 
 const Admin = (props) => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const history = useHistory();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(
+        "https://flexsync-api.onrender.com/api/auth/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username, password }),
+          credentials: "include",
+        }
+      );
+      const data = await response.json();
+      if (data) {
+        if (data.message === "Already logged in") {
+          console.log(data.message);
+          history.replace("/admin-home");
+        } else if (data.isAdmin === true) {
+          console.log(data.isAdmin);
+          history.replace("/admin-home");
+        } else {
+          alert("You are not an admin");
+        }
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div className="admin-container">
       <Helmet>
@@ -72,7 +106,7 @@ const Admin = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -127,20 +161,26 @@ const Admin = (props) => {
               src="https://i.pinimg.com/564x/0d/42/c5/0d42c51c82fca7b2a1360ffec4747b2a.jpg"
               className="admin-image"
             />
-            <form className="admin-form">
+            <form className="admin-form" onSubmit={handleLogin}>
               <div className="admin-form1">
                 <h1 className="admin-text10">Admin Login</h1>
                 <input
                   type="text"
                   placeholder="Username"
                   className="admin-username input"
+                  onChange={(e) => setUsername(e.target.value)}
+                  value={username}
+                  required={true}
                 />
                 <input
                   type="password"
                   placeholder="Password"
                   className="admin-password input"
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
+                  required={true}
                 />
-                <button type="button" className="admin-get-started1 button">
+                <button type="submit" className="admin-get-started1 button">
                   <span className="admin-text11">
                     <span>Login</span>
                     <br></br>
@@ -213,7 +253,7 @@ const Admin = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -263,7 +303,7 @@ const Admin = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Admin
+export default Admin;
