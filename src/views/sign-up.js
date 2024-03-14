@@ -48,7 +48,7 @@ const SignUp = (props) => {
   return (
     <div className="sign-up-container">
       <Helmet>
-        <title>Sign-Up - FlexSync</title>
+        <title>Get Started</title>
         <meta property="og:title" content="Sign-Up - FlexSync" />
       </Helmet>
       <div className="sign-up-top-container">

@@ -174,7 +174,7 @@ const AdminStatistics = (props) => {
   return (
     <div className="admin-statistics-container">
       <Helmet>
-        <title>Admin-Statistics - FlexSync</title>
+        <title>Dashboard</title>
         <meta property="og:title" content="Admin-Statistics - FlexSync" />
       </Helmet>
       <div className="admin-statistics-container1">

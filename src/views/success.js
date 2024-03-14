@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import SolidButton from '../components/solid-button'
-import './success.css'
+import SolidButton from "../components/solid-button";
+import "./success.css";
 
 const Success = (props) => {
   return (
     <div className="success-container">
       <Helmet>
-        <title>Success - FlexSync</title>
+        <title>Congratulations!</title>
         <meta property="og:title" content="Success - FlexSync" />
       </Helmet>
       <div className="success-top-container">
@@ -72,7 +72,7 @@ const Success = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -127,7 +127,7 @@ const Success = (props) => {
                 You have
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -137,7 +137,7 @@ const Success = (props) => {
               <span className="success-text14">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -224,7 +224,7 @@ const Success = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -274,7 +274,7 @@ const Success = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Success
+export default Success;

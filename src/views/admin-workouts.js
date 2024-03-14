@@ -68,7 +68,7 @@ const AdminWorkouts = (props) => {
   return (
     <div className="admin-workouts-container">
       <Helmet>
-        <title>Admin</title>
+        <title>Dashboard</title>
         <meta property="og:title" content="Workouts" />
       </Helmet>
       <div className="admin-workouts-container1">

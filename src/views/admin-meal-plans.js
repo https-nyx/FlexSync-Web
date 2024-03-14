@@ -69,7 +69,7 @@ const AdminMealPlans = (props) => {
   return (
     <div className="admin-meal-plans-container">
       <Helmet>
-        <title>Admin-Meal-Plans - FlexSync</title>
+        <title>Dashboard</title>
         <meta property="og:title" content="Admin-Meal-Plans - FlexSync" />
       </Helmet>
       <div className="admin-meal-plans-container1">

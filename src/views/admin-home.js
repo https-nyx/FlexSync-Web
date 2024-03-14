@@ -68,7 +68,7 @@ const AdminHome = (props) => {
   return (
     <div className="admin-home-container">
       <Helmet>
-        <title>Admin</title>
+        <title>Dashboard</title>
         <meta property="og:title" content="Admin-Home - FlexSync" />
       </Helmet>
       <div className="admin-home-container1">

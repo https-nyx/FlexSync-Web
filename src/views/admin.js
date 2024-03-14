@@ -25,13 +25,15 @@ const Admin = (props) => {
         }
       );
       const data = await response.json();
+      console.log(data);
       if (data) {
         if (data.message === "Already logged in") {
-          console.log(data.message);
-          history.replace("/admin-home");
+          alert("You are already logged in");
+          history.push("/admin-home");
         } else if (data.isAdmin === true) {
           console.log(data.isAdmin);
-          history.replace("/admin-home");
+          console.log(data);
+          history.push("/admin-home");
         } else {
           alert("You are not an admin");
         }
@@ -44,7 +46,7 @@ const Admin = (props) => {
   return (
     <div className="admin-container">
       <Helmet>
-        <title>Admin - FlexSync</title>
+        <title>Login</title>
         <meta property="og:title" content="Admin - FlexSync" />
       </Helmet>
       <div className="admin-top-container">

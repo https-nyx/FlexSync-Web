@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import SolidButton from '../components/solid-button'
-import './preview.css'
+import SolidButton from "../components/solid-button";
+import "./preview.css";
 
 const Preview = (props) => {
   return (
     <div className="preview-container">
       <Helmet>
-        <title>Preview - FlexSync</title>
+        <title>Preview</title>
         <meta property="og:title" content="Preview - FlexSync" />
       </Helmet>
       <div className="preview-top-container">
@@ -70,7 +70,7 @@ const Preview = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -280,7 +280,7 @@ const Preview = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -330,7 +330,7 @@ const Preview = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Preview
+export default Preview;

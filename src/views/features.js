@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import SolidButton from '../components/solid-button'
-import './features.css'
+import SolidButton from "../components/solid-button";
+import "./features.css";
 
 const Features = (props) => {
   return (
     <div className="features-container">
       <Helmet>
-        <title>Features - FlexSync</title>
+        <title>Features</title>
         <meta property="og:title" content="Features - FlexSync" />
       </Helmet>
       <div className="features-top-container">
@@ -73,7 +73,7 @@ const Features = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -127,7 +127,7 @@ const Features = (props) => {
               All these
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -135,7 +135,7 @@ const Features = (props) => {
             <span className="features-text13">
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -273,7 +273,7 @@ const Features = (props) => {
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -323,7 +323,7 @@ const Features = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;
